@@ -1,0 +1,51 @@
+nav{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255,252,243);
+    >img{
+        width: 12rem;
+        height: 6rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    >div{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        >span{
+        font-size: 1.6rem;
+        font-family: 'Syne';
+        font-weight: 700;
+        padding: 0.4rem;
+        &:hover{
+            cursor: pointer;
+        }
+        }
+        >img{
+            margin-left: 1rem;
+            width: 4rem;
+            height: 3.2rem;
+            &:hover{
+            cursor: pointer;
+        }
+        }
+    }
+}
+
+
+
+.border-color{
+    border: 3px solid #00BC8F;
+}
+
+.border-placeholder{
+    border: 3px solid transparent;
+}
