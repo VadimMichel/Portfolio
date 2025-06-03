@@ -1,0 +1,15 @@
+<section>
+    <h2>My skills</h2>
+    <div>
+        @for (logo of logos; track logo.name) {
+            <div>
+                <img src="{{logo.imgUrl}}" alt="{{logo.imgUrl}}">
+                <p>{{logo.imgUrl}}</p>
+            </div>
+        }
+    </div>
+    <div>
+        <img src="./../../../assets/img/logos/new_skill_logo.png" alt="new_skill_logo">
+        <span>Don't see the skill you need? <a href="#">Contact me</a>I#m always ready to learn!</span>
+    </div>
+</section>

@@ -1,0 +1,94 @@
+section{
+    margin-top: 24rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    >div:nth-child(2){
+        display: flex;
+        justify-content: space-between;
+        >div{
+            width: 61rem;
+            >p{
+                font-family: 'Overpass';
+                font-weight: 400;
+                font-size: 2.2rem;
+                margin-bottom: 8rem;
+            }
+            >div{
+                >div{
+                    display: flex;
+                    align-items: center;
+                    gap: 4rem;
+                    margin-bottom: 4rem;
+                    >img{
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                    >span{
+                        font-family: 'Overpass';
+                        font-weight: 400;
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+        >img{
+        width: 55.2rem;
+        height: 55.2rem;
+        object-fit: cover;
+        }
+    } 
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    >button{
+        font-family: 'Overpass';
+        font-size: 2.2rem;
+        font-weight: 400;
+        width: 21.3rem;
+        height: 6.8rem;
+        border: 0.4rem solid black;
+        background-color: #fffcf3;
+        &:hover{
+            cursor: pointer;
+            transition: 250ms ease-in-out;
+            font-weight: 800;
+            transform: scaleX(1.1);
+        }
+    }
+}
+
+h2{
+    width: 61.9rem;
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 7.8rem;
+    margin-bottom: 8rem;
+    &:hover{
+        transition: 250ms ease-in-out;
+        color: #00bc8f;
+        cursor: default;
+    }
+}
+
+.arrow-container{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: flex-end;
+    >img{
+        width: 21.5rem;
+        height: 21.5rem;
+        animation: arrow-animation 800ms ease-in-out;
+    }
+}
+
+@keyframes arrow-animation {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100%, 100%);
+  }
+}
