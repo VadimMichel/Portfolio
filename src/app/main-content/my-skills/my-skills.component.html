@@ -2,14 +2,17 @@
     <h2>My skills</h2>
     <div>
         @for (logo of logos; track logo.name) {
-            <div>
+            <div class="logo-container">
                 <img src="{{logo.imgUrl}}" alt="{{logo.imgUrl}}">
-                <p>{{logo.imgUrl}}</p>
+                <p>{{logo.name}}</p>
             </div>
         }
     </div>
     <div>
         <img src="./../../../assets/img/logos/new_skill_logo.png" alt="new_skill_logo">
-        <span>Don't see the skill you need? <a href="#">Contact me</a>I#m always ready to learn!</span>
+        <span>Don't see the skill you need? <a href="#">Contact me</a> I'm always ready to learn!</span>
     </div>
 </section>
+<div class="arrow-container">
+    <img src="./../../../assets/img/arrow_down_right.png" alt="arrow_down_right">
+</div>
