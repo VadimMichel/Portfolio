@@ -1,0 +1,16 @@
+section{
+    h2{
+        text-align: center;
+        &:hover{
+            transition: 250ms ease-in-out;
+            color: #00BC8F;
+            cursor: default;
+        }
+    }
+    p{
+        text-align: center;
+        font-family: 'Overpass';
+        font-size: 2.2rem;
+        margin-top: 3rem;
+    }
+}
