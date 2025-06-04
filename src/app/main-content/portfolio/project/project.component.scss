@@ -1,0 +1,53 @@
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16rem;
+    >div{
+        height: 35rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-end;
+        >p{
+            font-family: 'Syne';
+            font-weight: 700;
+            font-size: 4.8rem;
+        }
+        >div{
+            width: 54rem;
+            h3{
+                font-family: 'syne';
+                font-size: 4.5rem;
+                font-weight: 800;
+                margin-bottom: 1.2rem;
+            }
+            >p:nth-child(2){
+                font-family: 'Overpass';
+                font-weight: 400;
+                font-size: 2.3rem;
+                color: #00BC8F;
+            }
+            >p:nth-child(3){
+                font-family: 'Overpass';
+                font-weight: 400;
+                font-size: 1.6rem;
+                margin-bottom: 1.2rem;
+            }
+            button{
+                width: 18.9rem;
+                height: 6.5rem;
+                border: 4px solid black;
+                background: #FFFCF3;
+                font-size: 2.3rem;
+                font-family: 'Overpass';
+                font-weight: 400;
+                transform-origin: left center;
+                transition: 250ms ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    transform:scaleX(1.2);
+                }
+            }
+        }
+    }
+}
