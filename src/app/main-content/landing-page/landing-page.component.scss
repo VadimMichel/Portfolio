@@ -19,7 +19,6 @@ h1{
         text-align: center;
     }
     >div{
-        padding-right: min(4rem, 6%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -37,7 +36,7 @@ h1{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     >p{
         transform: rotate(-90deg);
         >a{
