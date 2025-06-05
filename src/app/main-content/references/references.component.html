@@ -1,12 +1,17 @@
 <section>
     <h2>References</h2>
     <p>I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.</p>
-    @for (singleReference of reference; track singleReference.name) {
-        <div>
-            <p>’’</p>
-            <p>{{singleReference.name}}</p>
-            <p>Team Partner</p>
-            <p>{{singleReference.comment}}</p>
-        </div>
-    }
+    <div>
+        @for (singleReference of reference; track singleReference.name) {
+            <div class="reference">
+                <p>’’</p>
+                <p>{{singleReference.name}}</p>
+                <p>Team Partner</p>
+                <p>{{singleReference.comment}}</p>
+            </div>
+        }
+    </div>
+    <div class="arrow-container">
+        <img src="assets/img/arrow-down-left.png" alt="">
+    </div>
 </section>
