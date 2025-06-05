@@ -24,4 +24,9 @@ h2{
   font-family: 'Syne';
   font-weight: 800;
   font-size: 7.8rem;
+  &:hover{
+    transition: 250ms ease-in-out;
+    color: #00BC8F;
+    cursor: default;
+    }
 }

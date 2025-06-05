@@ -1,11 +1,6 @@
 section{
     h2{
         text-align: center;
-        &:hover{
-            transition: 250ms ease-in-out;
-            color: #00BC8F;
-            cursor: default;
-        }
     }
     p{
         text-align: center;
