@@ -33,6 +33,11 @@ section{
                 margin: 1rem;
             }
         }
+        >img{
+            &:hover{
+                animation: logo-animation 300ms ease-in-out;
+            }
+        }
     }
 }
 
@@ -47,8 +52,34 @@ section{
         font-weight: 700;
         font-size: 1.6rem;
     }
+    &:hover{
+        >img{
+            animation: logo-animation 300ms ease-in-out;
+        }
+        >p{
+            color: #00BC8F;
+        }
+    }
 }
 
 .arrow-container{
     height: 30rem;
+}
+
+@keyframes logo-animation {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(18px);
+    }
+    50%{
+        transform: translateX(0) translateY(8px);
+    }
+    75%{
+        transform: translateX(-18px) translateY(0px);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+    }
 }
