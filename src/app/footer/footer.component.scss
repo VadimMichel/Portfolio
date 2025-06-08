@@ -126,7 +126,7 @@ footer{
     >div:nth-child(2){
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         flex-direction: column;
         gap: 1.6rem;
         >img{
@@ -146,7 +146,22 @@ footer{
         }
         >div{
             display: flex;
-            gap: 1.6rem;
+            gap: 5.6rem;
+            >img{
+                &:hover{
+                    cursor: pointer;
+                    animation: icon-animation 250ms ease-in-out forwards;
+                }
+            }
         }
+    }
+}
+
+@keyframes icon-animation{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-16px);
     }
 }

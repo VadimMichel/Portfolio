@@ -68,16 +68,10 @@ h1{
 }
 
 @keyframes arrow-animation {
-    0%{
-        transform:translateY(-100%);
+    from{
+      transform:translateY(-100%);  
     }
-    40%{
-        transform:translateY(0%);
-    }
-    80%{
-        transform:translateY(100%);;
-    }
-    100%{
+    to{
         transform:translateY(200%);
     }
 }
