@@ -51,7 +51,6 @@ section{
         &:hover{
             cursor: pointer;
             transition: 250ms ease-in-out;
-            font-weight: 800;
             transform: scaleX(1.1);
         }
     }
@@ -70,7 +69,6 @@ h2{
     >img{
         width: 21.5rem;
         height: 21.5rem;
-        animation: arrow-animation 800ms ease-in-out;
     }
 }
 
@@ -79,6 +77,31 @@ h2{
     transform: translate(0, 0);
   }
   to {
-    transform: translate(-100%, 100%);
+    transform: translate(-80%, 80%);
   }
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper::after {
+    width: 55.2rem;
+    height: 55.2rem;
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    right: -3rem;
+    bottom: -3rem;
+    border: 6px solid black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; 
+    z-index: 3;
+}
+
+.image-wrapper:hover::after {
+    opacity: 1;
 }
