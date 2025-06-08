@@ -1,8 +1,13 @@
 <section>
-    <img src={{projectData.imgaeUrl}} alt="join-image">
+    <div>
+        <div class="image-wrapper">
+            <img src={{projectData.imgaeUrl}} alt="join-image">
+        </div>
+        <img class="arrow-down" src="assets/icons/sircle-arrow-down.svg" alt="">
+    </div>
     <div>
         <p>{{ index + 1 }} / {{ totalProjects }}</p>
-        <div>
+        <div class="project-info">
             <h3>{{projectData.name}}</h3>
             <p>{{projectData.usedSkills}}</p>
             <p>{{projectData.description}}</p>
