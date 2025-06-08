@@ -28,6 +28,14 @@ section{
     width: 39.7rem;
     height: 34.4rem;
     border:0.4rem solid black;
+    &:hover{
+        transition: 250ms ease-in-out;
+        border:0.4rem solid #00BC8F;
+        >p:nth-child(1){
+            transition: 250ms ease-in-out;
+            color: #00BC8F;
+        }
+    }
     >p:nth-child(1){
         font-size: 6rem;
     }
