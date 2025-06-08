@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedModule } from '../../shared/shared.module';
 
 interface Logo{
   name: string;
@@ -8,7 +9,7 @@ interface Logo{
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [],
+  imports: [ SharedModule],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })

@@ -49,3 +49,23 @@ section{
     display: flex;
     justify-content: flex-end;
 }
+
+@keyframes arrow-animation {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-60%, 60%);
+  }
+}
+
+.arrow {
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: opacity 0.3s ease;
+}
+
+.arrow.animate {
+  animation: arrow-animation 800ms ease-in-out forwards;
+  opacity: 1;
+}

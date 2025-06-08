@@ -66,6 +66,26 @@ section{
     height: 30rem;
 }
 
+@keyframes arrow-animation {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(40%, 40%);
+  }
+}
+
+.arrow {
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: opacity 0.3s ease;
+}
+
+.arrow.animate {
+  animation: arrow-animation 800ms ease-in-out forwards;
+  opacity: 1;
+}
+
 @keyframes logo-animation {
     0%{
         transform: translateX(0);

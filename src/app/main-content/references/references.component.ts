@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedModule } from '../../shared/shared.module';
 
 interface Reference{
   name: string;
@@ -8,7 +9,7 @@ interface Reference{
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [],
+  imports: [SharedModule],
   templateUrl: './references.component.html',
   styleUrl: './references.component.scss'
 })
