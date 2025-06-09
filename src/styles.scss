@@ -29,3 +29,7 @@ h2{
     cursor: default;
     }
 }
+
+body.no-scroll {
+  overflow: hidden;
+}

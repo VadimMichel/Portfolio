@@ -79,3 +79,60 @@ nav{
 .hamburger.open span:nth-child(3) {
   transform: translateY(-8.5px) rotate(-45deg);
 }
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10rem;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: #FFFCF3;
+    z-index: 6;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    padding: 2rem;
+    background-image: url('./../../assets/img/background\ overlay.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    >ul{
+        align-self: flex-start;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        >li{
+            >a{
+                font-family: 'Syne';
+                font-weight: 700;
+                font-size: 9.6rem;
+                color: black;
+            }
+        }
+    }
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
