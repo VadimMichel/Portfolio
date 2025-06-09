@@ -19,7 +19,7 @@ export class ScrollAnimateDirective implements AfterViewInit {
       ([entry]) => {
         if (entry.isIntersecting) {
           this.renderer.addClass(this.el.nativeElement, this.animationClass);
-          observer.unobserve(this.el.nativeElement); // Nur einmal triggern
+          observer.unobserve(this.el.nativeElement); 
         }
       },
       { threshold: 0.3 }

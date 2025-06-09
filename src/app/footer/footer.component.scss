@@ -124,27 +124,19 @@ footer{
         }
     }
     >div:nth-child(2){
+        margin-top: -10rem;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         flex-direction: column;
-        gap: 1.6rem;
-        >img{
-            justify-self: center;
-            margin-top: -8rem;
-            padding-bottom: 4rem;
-            &:hover{
-                transition: 250ms ease-in-out;
-                transform: scaleY(1.4);
-            }
-        }
+        gap: 3.6rem;
         >p{
             font-family: 'Overpass';
             font-weight: 400;
             font-size: 2.2rem;
             color: #FFFCF3;
         }
-        >div{
+        >div:nth-child(2){
             display: flex;
             gap: 5.6rem;
             >img{
@@ -153,6 +145,21 @@ footer{
                     animation: icon-animation 250ms ease-in-out forwards;
                 }
             }
+        }
+    }
+}
+
+.arrow-container{
+    height: 10rem;
+    overflow: hidden;
+    >img{
+        transform: scaleY(1.6) translateY(30px);
+        justify-self: center;
+        padding-bottom: 4rem;
+        z-index: 1;
+        &:hover{
+            transition: 250ms ease-in-out;
+            transform: scaleY(1.6) translateY(10px);
         }
     }
 }
