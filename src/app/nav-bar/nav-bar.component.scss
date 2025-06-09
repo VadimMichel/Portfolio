@@ -40,16 +40,42 @@ nav{
     }
 }
 
-.burger-menu{
-    position: absolute;
-    bottom: 100;
-    right: 0;
-}
-
 .border-color{
     border: 3px solid #00BC8F;
 }
 
 .border-placeholder{
     border: 3px solid transparent;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
 }

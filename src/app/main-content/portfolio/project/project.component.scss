@@ -5,7 +5,7 @@ section{
     margin-bottom: 16rem;
     &:hover .image-wrapper img{
         transition: 250ms ease-in-out;
-        filter: grayscale(0%)
+        filter: grayscale(0%);
     }
     &:hover .image-wrapper::after {
     opacity: 1;

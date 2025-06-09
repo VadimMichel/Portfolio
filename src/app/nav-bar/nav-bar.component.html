@@ -3,7 +3,11 @@
     <div>
         <span class="border-color">EN</span>
         <span class="border-placeholder">DE</span>
-        <img src="assets/img/12. burger menu S3.png" alt="">
+        <div class="hamburger" [class.open]="isMenuOpen" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </nav>
 
