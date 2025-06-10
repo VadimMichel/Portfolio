@@ -116,18 +116,53 @@ nav{
     background-position: bottom;
     background-size: contain;
     >ul{
+        overflow: hidden;
         align-self: flex-start;
         list-style: none;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        
+        padding-left: 3rem;
         >li{
-            >a{
+            a {
+                width: 58rem;
+                height: 10rem;
+                position: relative;
                 font-family: 'Syne';
                 font-weight: 700;
                 font-size: 9.6rem;
                 color: black;
-            }
+                display: inline-block;
+
+                .default-img {
+                    position: absolute;
+                    bottom: 0;
+                    left: -18px;
+                    transition: opacity 300ms ease;
+                    opacity: 1;
+                }
+
+                .animation-img {
+                    height: 12rem;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0;
+                    transform: translateX(0);
+                    transition: transform 300ms ease, opacity 300ms ease;
+                }
+
+                &:hover {
+                    .default-img {
+                    opacity: 0;
+                    }
+                    .animation-img {
+                    opacity: 1;
+                    transform: translateX(296px);
+                    }
+                }
+            } 
         }
     }
 }
