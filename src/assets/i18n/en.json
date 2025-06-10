@@ -1,0 +1,10 @@
+{
+    "landing-page": {
+        "h1" : "Frontend Developer",
+        "info" : "Scroll<br>Down"
+    },
+    "about-me": {
+        "h2" : "About me",
+        "description" : ""
+    }
+}
