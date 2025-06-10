@@ -18,5 +18,12 @@
         "description" : "Entdecke eine Auswahl meiner Arbeiten, interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
         "project1Description" : "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
         "project2Description" : "Ein einfaches Jump’n’Run-Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Salsa-Flaschen zu finden, um gegen die Hühner zu kämpfen."
+    },
+    "references" : {
+        "h2" : "Referenzen",
+        "description" : "Ich arbeite sowohl selbstständig als auch im Team erfolgreich. Hier ist, was meine Kolleginnen und Kollegen über die Zusammenarbeit mit mir sagen.",
+        "reference1" : "Michi war ein herausragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
+        "reference2" : "Michi war ein herausragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
+        "reference3" : "Michi war ein herausragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben."
     }
 }

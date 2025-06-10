@@ -1,13 +1,13 @@
 <section>
-    <h2>References</h2>
-    <p>I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.</p>
+    <h2>{{"references.h2" | translate}}</h2>
+    <p>{{"references.description" | translate}}</p>
     <div>
         @for (singleReference of reference; track singleReference.name) {
             <div class="reference">
                 <p>’’</p>
-                <p>{{singleReference.name}}</p>
+                <p>{{singleReference.name | translate}}</p>
                 <p>Team Partner</p>
-                <p>{{singleReference.comment}}</p>
+                <p>{{singleReference.comment | translate}}</p>
             </div>
         }
     </div>
