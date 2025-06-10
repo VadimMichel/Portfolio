@@ -35,7 +35,7 @@ section{
         }
         >img{
             &:hover{
-                animation: logo-animation 300ms ease-in-out;
+                animation: logo-animation 300ms ease;
             }
         }
     }
@@ -54,7 +54,7 @@ section{
     }
     &:hover{
         >img{
-            animation: logo-animation 400ms ease-in-out;
+            animation: logo-animation 400ms ease;
         }
         >p{
             color: #00BC8F;
@@ -82,7 +82,7 @@ section{
 }
 
 .arrow.animate {
-  animation: arrow-animation 800ms ease-in-out forwards;
+  animation: arrow-animation 800ms ease forwards;
   opacity: 1;
 }
 

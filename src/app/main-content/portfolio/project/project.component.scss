@@ -4,19 +4,19 @@ section{
     justify-content: space-between;
     margin-bottom: 16rem;
     &:hover .image-wrapper img{
-        transition: 250ms ease-in-out;
+        transition: 250ms ease;
         filter: grayscale(0%);
     }
     &:hover .image-wrapper::after {
     opacity: 1;
     }
     &:hover .project-info{
-        animation: contant-animation 250ms ease-in-out forwards;
+        animation: contant-animation 250ms ease forwards;
         opacity: 1;
     }
     &:hover .arrow-down{
         opacity: 1;
-        animation: arrow-animation 250ms ease-in-out forwards;
+        animation: arrow-animation 250ms ease forwards;
     }
     >div:nth-child(1){
         display: flex;
@@ -69,7 +69,7 @@ section{
         font-family: 'Overpass';
         font-weight: 400;
         transform-origin: left center;
-        transition: 250ms ease-in-out;
+        transition: 250ms ease;
         &:hover{
             cursor: pointer;
             transform:scaleX(1.2);

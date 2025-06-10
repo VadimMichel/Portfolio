@@ -29,10 +29,10 @@ section{
     height: 34.4rem;
     border:0.4rem solid black;
     &:hover{
-        transition: 250ms ease-in-out;
+        transition: 250ms ease;
         border:0.4rem solid #00BC8F;
         >p:nth-child(1){
-            transition: 250ms ease-in-out;
+            transition: 250ms ease;
             color: #00BC8F;
         }
     }
@@ -66,6 +66,6 @@ section{
 }
 
 .arrow.animate {
-  animation: arrow-animation 800ms ease-in-out forwards;
+  animation: arrow-animation 800ms ease forwards;
   opacity: 1;
 }

@@ -50,7 +50,7 @@ section{
         background-color: #fffcf3;
         &:hover{
             cursor: pointer;
-            transition: 250ms ease-in-out;
+            transition: 250ms ease;
             transform: scaleX(1.1);
         }
     }
@@ -88,7 +88,7 @@ h2{
 }
 
 .arrow.animate {
-  animation: arrow-animation 800ms ease-in-out forwards;
+  animation: arrow-animation 800ms ease forwards;
   opacity: 1;
 }
 
