@@ -13,5 +13,10 @@
     "mySkills" : {
         "h2" : "Meine Fähigkeiten",
         "description" : "Die gesuchte Fähigkeit ist nicht dabei? <a class='link' href='#'>Kontaktiere mich</a> ich erweitere mein Wissen ständig."
+    },
+    "portfolio" : {
+        "description" : "Entdecke eine Auswahl meiner Arbeiten, interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+        "project1Description" : "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
+        "project2Description" : "Ein einfaches Jump’n’Run-Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Salsa-Flaschen zu finden, um gegen die Hühner zu kämpfen."
     }
 }

@@ -13,5 +13,10 @@
     "mySkills" : {
         "h2" : "My skills",
         "description": "Don't see the skill you need? <a class='link' href='#'>Contact me</a> I'm always ready to learn!"
+    },
+    "portfolio" : {
+        "description" : "Explore a selection of my work here - Interact withprojects to see my skill in action",
+        "project1Description" : "Task manager inspired by the Kanban System. Create and organize tasks using and drop functions, assign useres and categories.",
+        "project2Description" : "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chicken."
     }
 }
