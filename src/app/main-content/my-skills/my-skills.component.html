@@ -1,5 +1,5 @@
 <section>
-    <h2>My skills</h2>
+    <h2>{{"mySkills.h2" | translate}}</h2>
     <div>
         @for (logo of logos; track logo.name) {
             <div class="logo-container">
@@ -10,7 +10,7 @@
     </div>
     <div>
         <img src="assets/img/logos/new_skill_logo.png" alt="new_skill_logo">
-        <span>Don't see the skill you need? <a href="#">Contact me</a> I'm always ready to learn!</span>
+        <span [innerHTML]="'mySkills.description' | translate"></span>
     </div>
 </section>
 <div class="arrow-container">
