@@ -1,16 +1,27 @@
 import { Component, Renderer2, OnDestroy } from '@angular/core';
+import { TranslateService, TranslatePipe, TranslateDirective } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe ,TranslateDirective],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-  isMenuOpen = false;
+  isMenuOpen: boolean = false;
+  defaultLanguage: boolean = true;
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, private translate: TranslateService) {}
+  
+  changeLanguage(language: string){
+    this.translate.use(language)
+    if(language == 'en'){
+      this.defaultLanguage = true;
+    }else{
+      this.defaultLanguage = false;
+    }
+  }
 
   toggleMenu() {
     if(this.isMenuOpen == false){
