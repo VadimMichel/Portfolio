@@ -1,17 +1,12 @@
 <section>
-    <h2>About me</h2>
+    <h2>{{"about-me.h2" | translate}}</h2>
     <div>
         <div>
-            <p>
-                Ich bin angehender Frontend-Entwickler mit einem starken Fokus auf nutzerfreundliche Webanwendungen, sauberen Code und effektive Zusammenarbeit. Erste Praxiserfahrungen habe ich mit Vanilla JavaScript, CSS und Django gesammelt. Besonders fasziniert mich am Coden die Verbindung aus Logik, Kreativität und realer Wirkung.<br><br>
-                Ich bin lernbereit, technologieoffen und arbeite gerne im Team - ob per Pair Programming, Code-Reviews oder Remote-Calls. Probleme gehe ich strukturiert, kreativ und beharrlich an. Dank meines Organisationstalents, meiner empathischen Kommunikation und meines Verantwortungsbewusstseins kann ich mich schnell in Teams integrieren und verlässlich zum Projekterfolg beitragen.
-                <!-- I'm an aspiring frontend developer with a strong focus on user-friendly web applications, clean code, and effective collaboration. I've gained hands-on experience with Vanilla JavaScript, CSS, and Django. What excites me about coding is the combination of logic, creativity, and real-world impact.<br><br>
-                I'm eager to learn, open to new technologies, and enjoy working in teams—whether through pair programming, code reviews, or remote collaboration tools. I approach problems with structure, creativity, and persistence. Thanks to my organizational skills, empathetic communication, and sense of responsibility, I integrate quickly into teams and reliably contribute to project success. -->
-            </p>
+            <p [innerHTML]="'about-me.description' | translate"></p>
             <div>
-                <div><img src="assets/img/house.png" alt=""><span>Based in Soltau ( close to Hamburg )</span></div>
-                <div><img src="assets/img/laptop_chromebook.png" alt=""><span>Open to work Remote or in Office</span></div>
-                <div class="button-container"><button>Let's talk</button></div>
+                <div><img src="assets/img/house.png" alt=""><span>{{"about-me.based" | translate}}</span></div>
+                <div><img src="assets/img/laptop_chromebook.png" alt=""><span>{{"about-me.work" | translate}}</span></div>
+                <div class="button-container"><button>{{"about-me.button" | translate}}</button></div>
             </div> 
         </div>
         <div class="image-wrapper">

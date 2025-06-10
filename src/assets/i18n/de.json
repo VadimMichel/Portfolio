@@ -2,5 +2,12 @@
     "landing-page": {
         "h1" : "Frontend Entwickler",
         "info" : "Mehr<br>anzeigen"
+    },
+    "about-me": {
+        "h2" : "Wer ich bin",
+        "description" : "Ich bin angehender Frontend-Entwickler mit einem starken Fokus auf nutzerfreundliche Webanwendungen, sauberen Code und effektive Zusammenarbeit. Erste Praxiserfahrungen habe ich mit Vanilla JavaScript, CSS und Django gesammelt. Besonders fasziniert mich am Coden die Verbindung aus Logik, Kreativität und realer Wirkung.<br><br>Ich bin lernbereit, technologieoffen und arbeite gerne im Team - ob per Pair Programming, Code-Reviews oder Remote-Calls. Probleme gehe ich strukturiert, kreativ und beharrlich an. Dank meines Organisationstalents, meiner empathischen Kommunikation und meines Verantwortungsbewusstseins kann ich mich schnell in Teams integrieren und verlässlich zum Projekterfolg beitragen.",
+        "based" : "Wohnhaft in Soltau (nahe Hamburg)",
+        "work" : "Offen für Remote- oder Vor-Ort-Tätigkeit",
+        "button" : "Lass uns reden"
     }
 }
