@@ -140,7 +140,7 @@ nav{
         padding-left: 3rem;
         >li{
             a {
-                width: 58rem;
+                width: auto;
                 height: 10rem;
                 position: relative;
                 font-family: 'Syne';
@@ -148,6 +148,7 @@ nav{
                 font-size: 9.6rem;
                 color: black;
                 display: inline-block;
+                white-space: nowrap;
                 .default-img {
                     position: absolute;
                     bottom: 0;
