@@ -25,5 +25,15 @@
         "reference1" : "Michi war ein herausragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
         "reference2" : "Michi war ein herausragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
         "reference3" : "Michi war ein herausragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben."
+    },
+    "footer" : {
+        "h2" : "Sag Hallo!",
+        "description1" : "Lust, ein neues Projekt zu besprechen?",
+        "description2" : "Sag Hallo! Lass uns über deine Ideen sprechen und sie gemeinsam umsetzen.",
+        "privacyPolicy1" : "Ich habe die",
+        "privacyPolicy2" : "Datenschutzrichtlinie",
+        "privacyPolicy3" : "gelesen und willige in die Verarbeitung meiner Daten gemäß dieser ein.",
+        "LegalNotics" : "Impressum",
+        "button" : "absenden"
     }
 }

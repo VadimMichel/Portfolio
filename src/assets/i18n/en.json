@@ -25,5 +25,15 @@
         "reference1" : "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
         "reference2" : "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
         "reference3" : "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals."
+    },
+    "footer" : {
+        "h2" : "Say Hi!",
+        "description1" : "Want to discuss a new project?",
+        "description2" : "Say hello! Let's discuss your ideas and make it happen",
+        "privacyPolicy1" : "I've read the",
+        "privacyPolicy2" : "privacy policy",
+        "privacyPolicy3" : "and agree to the processing of my data as outlined",
+        "LegalNotics" : "Legal notics",
+        "button" : "Send message"
     }
 }
