@@ -100,12 +100,14 @@ nav{
 
 .mobile-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     position: fixed;
     top: 10rem;
     right: 0;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 10rem);
     background: #FFFCF3;
     z-index: 6;
     transform: translateX(100%);
@@ -113,16 +115,14 @@ nav{
     padding: 2rem;
     background-image: url('./../../assets/img/background\ overlay.svg');
     background-repeat: no-repeat;
-    background-position: bottom;
     background-size: contain;
+    background-position: 0 34rem;
     >ul{
         overflow: hidden;
-        align-self: flex-start;
         list-style: none;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        
         padding-left: 3rem;
         >li{
             a {
@@ -134,7 +134,6 @@ nav{
                 font-size: 9.6rem;
                 color: black;
                 display: inline-block;
-
                 .default-img {
                     position: absolute;
                     bottom: 0;
@@ -142,7 +141,6 @@ nav{
                     transition: opacity 300ms ease;
                     opacity: 1;
                 }
-
                 .animation-img {
                     height: 12rem;
                     position: absolute;
@@ -152,7 +150,6 @@ nav{
                     transform: translateX(0);
                     transition: transform 300ms ease, opacity 300ms ease;
                 }
-
                 &:hover {
                     .default-img {
                     opacity: 0;
@@ -171,3 +168,42 @@ nav{
   transform: translateX(0);
 }
 
+.overlay-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    >div:nth-child(1){
+        >p:nth-child(1){
+            color: #FFFCF3;
+            font-family: 'Syne';
+            font-weight: 800;
+            font-size: 7.8rem;
+            &:hover{
+                color: #00BC8F;
+                cursor: default;
+            }
+        }
+        >p:nth-child(2){
+            font-family: 'Overpass';
+            font-weight: 300;
+            font-size: 23px;
+            >a{
+                color: #FFFCF3;
+            }
+        }
+    }
+    >div:nth-child(2){
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+        gap: 60px;
+        >a{
+            transition: 250ms ease;
+            &:hover{
+                transform: translateY(-12px);
+            }
+        }
+    }
+}

@@ -31,7 +31,6 @@ export class NavBarComponent {
   }
 
   ngOnDestroy() {
-    // Sicherheit: Klasse entfernen, falls Komponente zerstört wird
     this.renderer.removeClass(document.body, 'no-scroll');
   }
 }
