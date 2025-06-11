@@ -3,8 +3,8 @@ nav{
     top: 0;
     width: 100%;
     height: 10rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: min(12rem, 6%);
+    padding-right:min(12rem, 6%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,8 +129,8 @@ nav{
     padding: 2rem;
     background-image: url('./../../assets/img/background\ overlay.svg');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 34rem;
+    background-size: cover;
+    background-position: 0 37rem;
     >ul{
         overflow: hidden;
         list-style: none;
@@ -141,23 +141,24 @@ nav{
         >li{
             a {
                 width: auto;
-                height: 10rem;
                 position: relative;
                 font-family: 'Syne';
                 font-weight: 700;
-                font-size: 9.6rem;
+                font-size:clamp(3.6rem, calc(6vw + 2rem), 9.6rem);
                 color: black;
                 display: inline-block;
                 white-space: nowrap;
                 .default-img {
+                    width:clamp(1.6rem, calc(3vw + 1rem), 4rem);
                     position: absolute;
                     bottom: 0;
-                    left: -18px;
+                    left: -20px;
                     transition: opacity 300ms ease;
                     opacity: 1;
                 }
                 .animation-img {
-                    height: 12rem;
+                    width:clamp(20.6rem, calc(30vw + 10rem), 58rem);
+                    height: auto;
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -187,14 +188,14 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: min(12rem, 6%);
+    padding-right:min(12rem, 6%);
     >div:nth-child(1){
         >p:nth-child(1){
             color: #FFFCF3;
             font-family: 'Syne';
             font-weight: 800;
-            font-size: 7.8rem;
+            font-size:clamp(3.6rem, calc(6vw + 1rem), 7.8rem);
             &:hover{
                 color: #00BC8F;
                 cursor: default;
@@ -219,6 +220,18 @@ nav{
             &:hover{
                 transform: translateY(-12px);
             }
+        }
+    }
+}
+
+@media(max-width: 700px){
+    .overlay-links{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        >div:nth-child(2){
+
+           align-self: center; 
         }
     }
 }
