@@ -1,5 +1,5 @@
 section{
-    margin-top: 24rem;
+    margin-top: min(24rem, 20%);
     >div:nth-child(2){
         display: flex;
         justify-content: space-between;
@@ -10,6 +10,7 @@ section{
                 font-weight: 400;
                 font-size: 2.2rem;
                 margin-bottom: 8rem;
+                margin-right: 8rem;
             }
             >div{
                 >div{
@@ -28,11 +29,6 @@ section{
                     }
                 }
             }
-        }
-        >img{
-        width: 55.2rem;
-        height: 55.2rem;
-        object-fit: cover;
         }
     } 
 }
@@ -57,8 +53,9 @@ section{
 }
 
 h2{
+    font-size:clamp(3.6rem, calc(6vw + 1rem), 7.8rem);
     width: 61.9rem;
-    margin-bottom: 8rem;
+    margin-bottom: min(8rem, 8%);
     white-space: nowrap;
 }
 
@@ -94,13 +91,18 @@ h2{
 }
 
 .image-wrapper {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
+    >img{
+        width:clamp(24.9rem, calc(42vw + 10rem), 55.2rem);
+        height: clamp(24.9rem, calc(42vw + 10rem), 55.2rem);
+    
+    }
 }
 
 .image-wrapper::after {
-    width: 55.2rem;
-    height: 55.2rem;
+    width:clamp(24.9rem, calc(42vw + 10rem), 55.2rem);
+    height: clamp(24.9rem, calc(42vw + 10rem), 55.2rem);
     content: "";
     position: absolute;
     top: 3rem;
@@ -116,4 +118,53 @@ h2{
 
 .image-wrapper:hover::after {
     opacity: 1;
+}
+
+@media(max-width: 1200px ){
+    section{
+        h2{
+            justify-self: center;
+            text-align: center;
+        }
+        >div:nth-child(2){
+            flex-direction: column;
+            align-items: center;
+            >div{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                >p{
+                    text-align: center;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .image-wrapper::after{
+        justify-self: center;
+    }
+    .image-wrapper::after {
+        width:clamp(23.9rem, calc(41vw + 10rem), 55.2rem);
+        height: clamp(23.9rem, calc(41vw + 10rem), 55.2rem);
+    }
+}
+
+@keyframes image-animation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media(max-width: 900px ){
+    .image-wrapper::after{
+        animation: image-animation 3s ease infinite;
+        top: 1rem;
+        left: 1rem;
+        right: -1rem;
+        bottom: 0rem;
+    }
 }
