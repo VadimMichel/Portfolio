@@ -7,6 +7,6 @@
 }
 
 .margin-l-r-12{
-    margin-left: 12rem;
-    margin-right: 12rem;
+    margin-left:min(12rem, 6%);
+    margin-right:min(12rem, 6%);
 }

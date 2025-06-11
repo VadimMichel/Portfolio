@@ -13,7 +13,7 @@ h1{
     align-items: center;
     flex-direction: column;
     >p{
-        font-size: 12.8rem;
+        font-size:clamp(3rem, calc(7vw + 1rem), 12.8rem);
         font-family: 'Syne';
         font-weight: 800;
         text-align: center;
@@ -24,19 +24,23 @@ h1{
         align-items: center;
         gap: 1rem;
         >span{
-            font-size: 4.8rem;
+            font-size:clamp(2rem, calc(2vw + 1rem), 4.8rem);
             color: #00BC8F;
             font-family: "Overpass";
             font-weight: 700;
+        }
+        >img{
+            width:clamp(18rem, calc(30vw + 10rem), 67.3rem);
+            height: auto;
         }
     }
 }
 
 .lower-area{
+    margin-top: min(3rem, 6%);
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
     >p{
         transform: rotate(-90deg);
         >a{
@@ -47,7 +51,9 @@ h1{
         }
     }
     >div{
+        justify-self: flex-end;
         >p{
+            text-align: end;
             font-family: "Overpass";
             font-weight: 300;
             font-size: 2.2rem;
@@ -56,13 +62,17 @@ h1{
 }
 
 .arrow-container {
-  position: relative;
-  width: 11.6rem;
-  height: 18rem;
-  overflow: hidden; 
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 11.6rem;
+    height: 18rem;
+    overflow: hidden; 
 }
 
 .arrow{
+    width: 5rem;
+    height: 9rem;
     animation:arrow-animation 2s ease infinite;
     transform:translateY(-11.6rem) ;
 }
