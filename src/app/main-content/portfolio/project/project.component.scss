@@ -35,8 +35,53 @@ section{
     }
 }
 
-.arrow-down{
-    opacity: 0;
+.project2 {
+  flex-direction: row-reverse;
+  .image-wrapper::after {
+    left: auto;
+    right: 30px;
+  }
+  > div:nth-child(2) {
+    align-items: flex-start;
+  }
+  &:hover .project-info {
+    animation: content-animation-reverse 250ms ease forwards;
+    opacity: 1;
+  }
+   .arrow-down {
+    right: auto;
+    left: -70px; 
+  }
+  &:hover .arrow-down{
+    animation: arrow-animation-reverse 250ms ease forwards;
+  }
+}
+
+@keyframes content-animation-reverse {
+  0% {
+    transform: translateX(12rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes arrow-animation-reverse {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(135deg) scale(1.2);
+  }
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 150px;
+  right: -70px;
+  opacity: 0;
+  transition: transform 250ms ease, opacity 250ms ease;
+  z-index: 2;
 }
 
 .project-info{

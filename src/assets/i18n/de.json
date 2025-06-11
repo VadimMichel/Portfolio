@@ -11,7 +11,7 @@
         "button" : "Lass uns reden"
     },
     "mySkills" : {
-        "h2" : "Meine Fähigkeiten",
+        "h2" : "Meine Skills",
         "description" : "Die gesuchte Fähigkeit ist nicht dabei? <a class='link' href='#'>Kontaktiere mich</a> ich erweitere mein Wissen ständig."
     },
     "portfolio" : {
