@@ -41,7 +41,9 @@ h1{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
     >p{
+        transform: none;
         transform: rotate(-90deg);
         >a{
             color: black;
@@ -65,7 +67,7 @@ h1{
     display: flex;
     justify-content: flex-end;
     position: relative;
-    width: 11.6rem;
+    width: auto;
     height: 18rem;
     overflow: hidden; 
 }
