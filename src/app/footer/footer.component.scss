@@ -25,17 +25,21 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        >label{
-            >input:nth-child(1), :nth-child(2){
+        >div:nth-child(1), :nth-child(2), :nth-child(3){
+            margin-bottom: 1.6rem;
+            >input{
                 width:clamp(30rem, calc(60vw + 10rem), 61.7rem);
                 height: 5rem;
                 background: black;
                 border: none;
+                border: 4px solid transparent;
                 border-bottom: 3px solid #FFFCF3;
-                margin-bottom: 1.6rem;
                 &:hover{
                     border: 4px solid #FFFCF3;
                     cursor: pointer;
+                }
+                &::placeholder{
+                    color: white;
                 }
             }
             >textarea{
@@ -43,6 +47,7 @@ footer{
                 height: 20.2rem;
                 background: black;
                 border: none;
+                border: 4px solid transparent;
                 border-bottom: 3px solid #FFFCF3;
                 margin-bottom: 1.6rem;
                 resize: none;
@@ -106,6 +111,19 @@ footer{
         font-size: 2.2rem;
         color: #FFFCF3;
     }   
+}
+
+.input-image{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.text-image{
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .icon-area{

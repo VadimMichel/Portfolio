@@ -4,21 +4,55 @@
         <p>{{"footer.description1" | translate }}</p>
         <p>{{"footer.description2" | translate }}</p>
         <form>
-            <label>
-                <input type="text" formControlName="name" />
-            </label>
-            <label>
-                <input type="email" formControlName="email" />
-                
-            </label>
-            <label>
-                <textarea rows="4" formControlName="message"></textarea>
-            </label>
+            <div class="input-fields">
+                <input 
+                [(ngModel)]="userName"
+                #name="ngModel"
+                required placeholder="Your name" type="text" name="name" />
+                <div class="input-image">
+                    <img 
+                    *ngIf="name.valid && name.touched"
+                    src="./assets/icons/accepted.svg" alt="accepted">
+                    <img 
+                    *ngIf="name.invalid && name.touched" 
+                    src="./assets/icons/required.svg" alt="required">
+                </div>
+                <span *ngIf="name.invalid && name.touched">Your name is reguired</span>
+            </div>
             <div>
-                <input type="checkbox">
+                <input 
+                [(ngModel)]="eMail"
+                #mail="ngModel"
+                required placeholder="Your email" type="email" name="email" />
+                <div class="input-image">
+                    <img
+                    *ngIf="mail.valid && mail.touched" src="./assets/icons/accepted.svg" alt="accepted">
+                    <img 
+                    *ngIf="mail.invalid && mail.touched"
+                    src="./assets/icons/required.svg" alt="required">
+                </div>
+                <span *ngIf="mail.invalid && mail.touched">Your email is reguired</span>
+            </div>
+            <div>
+                <textarea 
+                [(ngModel)]="message"
+                #messageInput="ngModel"
+                required placeholder="your message" rows="4" name="message"></textarea>
+                <div class="text-image">
+                    <img
+                    *ngIf="messageInput.valid && messageInput.touched" src="./assets/icons/accepted.svg" alt="accepted">
+                    <img 
+                    *ngIf="messageInput.invalid && messageInput.touched"
+                    src="./assets/icons/required.svg" alt="required">
+                </div>
+                <span *ngIf="messageInput.invalid && messageInput.touched">Your message is empty</span>
+            </div>
+            <div>
+                <input 
+                required type="checkbox">
                 <span>{{"footer.privacyPolicy1" | translate }} <a href="#">{{"footer.privacyPolicy2" | translate }} </a> {{"footer.privacyPolicy3" | translate }}</span>
             </div>
-            <button type="submit" >Absenden</button>
+            <button type="submit">Absenden</button>
         </form>
     </div>
     <div class="icon-area">
