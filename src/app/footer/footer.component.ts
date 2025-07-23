@@ -14,4 +14,6 @@ export class FooterComponent {
   userName: string = "";
   eMail: string = "";
   message: string = "";
+  usernameFocus: boolean = false;
+  emailFocus: boolean = false;
 }

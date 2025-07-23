@@ -6,9 +6,12 @@
         <form>
             <div class="input-fields">
                 <input 
+                (focus)="usernameFocus = true"
+                (blur)="usernameFocus = false"
+                [class.infocus]="usernameFocus || userName.length > 0"
                 [(ngModel)]="userName"
                 #name="ngModel"
-                required placeholder="Your name" type="text" name="name" />
+                required [placeholder]="!usernameFocus ? 'Your name' : ''" type="text" name="name" />
                 <div class="input-image">
                     <img 
                     *ngIf="name.valid && name.touched"
@@ -18,12 +21,16 @@
                     src="./assets/icons/required.svg" alt="required">
                 </div>
                 <span *ngIf="name.invalid && name.touched">Your name is reguired</span>
+                <p class="place-holder" *ngIf="usernameFocus || userName.length > 0">Your name</p>
             </div>
             <div>
                 <input 
+                (focus)="emailFocus = true"
+                (blur)="emailFocus = false"
+                [class.infocus]="emailFocus || eMail.length > 0"
                 [(ngModel)]="eMail"
                 #mail="ngModel"
-                required placeholder="Your email" type="email" name="email" />
+                required [placeholder]="!emailFocus ? 'Your email' : ''" type="email" name="email" />
                 <div class="input-image">
                     <img
                     *ngIf="mail.valid && mail.touched" src="./assets/icons/accepted.svg" alt="accepted">
@@ -32,6 +39,7 @@
                     src="./assets/icons/required.svg" alt="required">
                 </div>
                 <span *ngIf="mail.invalid && mail.touched">Your email is reguired</span>
+                <p class="place-holder" *ngIf="emailFocus || eMail.length > 0">Your email</p>
             </div>
             <div>
                 <textarea 
