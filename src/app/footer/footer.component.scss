@@ -33,6 +33,7 @@ footer{
                 background: black;
                 border: 4px solid transparent;
                 border-bottom: 2px solid #FFFCF3;
+                border-top: 3px solid transparent;
                 font-family: 'Overpass';
                 color: white;
                 font-weight: 400;
@@ -83,11 +84,17 @@ footer{
                 &::placeholder{
                     font-family: 'Overpass';
                     font-weight: 400;
-                    font-size: 2.3rem;
+                    font-size: 1.8rem;
                     color: white;
                 }
                 &:focus{
                     outline: none;
+                }
+            }
+            >textarea.infocus{
+                border: 2px solid #FFFCF3;
+                &:hover{
+                    border: 2px solid #FFFCF3;
                 }
             }
             >span{
@@ -227,6 +234,10 @@ footer{
     left: 20px;
     animation: placeholderAnimation 250ms ease forwards;
     z-index: 50;
+}
+
+.place-holder-text{
+    top: 24px;
 }
 
 @keyframes placeholderAnimation{

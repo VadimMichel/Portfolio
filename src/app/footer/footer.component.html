@@ -43,9 +43,12 @@
             </div>
             <div>
                 <textarea 
+                (focus)="messageFocus = true"
+                (blur)="messageFocus = false"
+                [class.infocus]="messageFocus || message.length > 0"
                 [(ngModel)]="message"
                 #messageInput="ngModel"
-                required placeholder="your message" rows="4" name="message"></textarea>
+                required [placeholder]="!messageFocus ? 'Your message' : ''" rows="4" name="message"></textarea>
                 <div class="text-image">
                     <img
                     *ngIf="messageInput.valid && messageInput.touched" src="./assets/icons/accepted.svg" alt="accepted">
@@ -54,6 +57,7 @@
                     src="./assets/icons/required.svg" alt="required">
                 </div>
                 <span *ngIf="messageInput.invalid && messageInput.touched">Your message is empty</span>
+                <p class="place-holder" [class.place-holder-text]="messageFocus || message.length" *ngIf="messageFocus || message.length > 0">Your message</p>
             </div>
             <div>
                 <input 
