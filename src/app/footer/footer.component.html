@@ -3,7 +3,7 @@
     <div class="contact-container">
         <p>{{"footer.description1" | translate }}</p>
         <p>{{"footer.description2" | translate }}</p>
-        <form>
+        <form #form="ngForm">
             <div class="input-fields">
                 <input 
                 (focus)="usernameFocus = true"
@@ -59,12 +59,15 @@
                 <span *ngIf="messageInput.invalid && messageInput.touched">Your message is empty</span>
                 <p class="place-holder" [class.place-holder-text]="messageFocus || message.length" *ngIf="messageFocus || message.length > 0">Your message</p>
             </div>
-            <div>
+            <div class="checkbox-wrapper">
                 <input 
+                name="privacy"
+                [(ngModel)]="acceptedPrivacy"
+                #privacy="ngModel"
                 required type="checkbox">
                 <span>{{"footer.privacyPolicy1" | translate }} <a href="#">{{"footer.privacyPolicy2" | translate }} </a> {{"footer.privacyPolicy3" | translate }}</span>
             </div>
-            <button type="submit">Absenden</button>
+            <button type="submit" [disabled]="form.invalid">Absenden</button>
         </form>
     </div>
     <div class="icon-area">
@@ -84,5 +87,3 @@
         </div>
     </div>
 </footer>
-    
-

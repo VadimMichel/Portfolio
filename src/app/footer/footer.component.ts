@@ -17,4 +17,5 @@ export class FooterComponent {
   usernameFocus: boolean = false;
   emailFocus: boolean = false;
   messageFocus: boolean = false;
+  acceptedPrivacy: boolean = false;
 }

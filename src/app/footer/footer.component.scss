@@ -109,28 +109,6 @@ footer{
             -webkit-box-shadow: 0 0 0 1000px black inset !important;
             box-shadow: 0 0 0 1000px black inset !important;
             -webkit-text-fill-color: #fff !important;
-            }
-        >div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            >input{
-                accent-color: black;
-                width: 2.6rem;
-                height: 2.6rem;
-                border: solid #FFFCF3;
-            }
-            >span{
-                font-family: 'Overpass';
-                font-size: 1.6rem;
-                font-weight: 400;
-                color: #FFFCF3;
-                margin-left: 1.6rem;
-                >a{
-                    color: #00BC8F;
-                }
-            }
         }
         button{
             width: 27rem;
@@ -166,6 +144,40 @@ footer{
         color: #FFFCF3;
     }   
 }
+
+.checkbox-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >input{
+        accent-color: black;
+        width: 2.6rem;
+        height: 2.6rem;
+        border: solid #FFFCF3;
+    }
+    >span{
+        display: flex;
+        align-items: center;
+        font-family: 'Overpass';
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #FFFCF3;
+        margin-left: 1.6rem;
+        >a{
+            color: #00BC8F;
+        }
+    }
+}
+
+button:disabled {
+  color: #666 !important;         
+  cursor: not-allowed;    
+  box-shadow: none;       
+  pointer-events: none;   
+  transition: none;       
+  border-color: #666 !important;
+}
+
 
 .input-image{
     position: absolute;
