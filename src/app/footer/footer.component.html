@@ -4,7 +4,7 @@
         <p>{{"footer.description1" | translate }}</p>
         <p>{{"footer.description2" | translate }}</p>
         <form #form="ngForm">
-            <div class="input-fields">
+            <div class="input-wrapper">
                 <input 
                 (focus)="usernameFocus = true"
                 (blur)="usernameFocus = false"
@@ -23,7 +23,7 @@
                 <span *ngIf="name.invalid && name.touched">Your name is reguired</span>
                 <p class="place-holder" *ngIf="usernameFocus || userName.length > 0">Your name</p>
             </div>
-            <div>
+            <div class="input-wrapper">
                 <input 
                 (focus)="emailFocus = true"
                 (blur)="emailFocus = false"

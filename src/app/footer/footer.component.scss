@@ -26,33 +26,7 @@ footer{
         align-items: center;
         justify-content: center;
         >div:nth-child(1), :nth-child(2), :nth-child(3){
-            margin-bottom: 3.2rem;
-            >input{
-                width:clamp(30rem, calc(60vw + 10rem), 61.7rem);
-                height: 5rem;
-                background: black;
-                border: 4px solid transparent;
-                border-bottom: 2px solid #FFFCF3;
-                border-top: 3px solid transparent;
-                font-family: 'Overpass';
-                color: white;
-                font-weight: 400;
-                font-size: 1.8rem;
-                padding: 0 16px;
-                &:hover{
-                    border: 4px solid #FFFCF3;
-                    cursor: pointer;
-                }
-                &::placeholder{
-                    font-family: 'Overpass';
-                    font-weight: 400;
-                    font-size: 1.8rem;
-                    color: white;
-                }
-                &:focus{
-                    outline: none;
-                }
-            }
+            margin-bottom: 4.2rem;
             >input.infocus{
                 border: 2px solid #FFFCF3;
                 &:hover{
@@ -71,7 +45,6 @@ footer{
                 border: none;
                 border: 4px solid transparent;
                 border-bottom: 2px solid #FFFCF3;
-                margin-bottom: 1.6rem;
                 resize: none;
                 color: white;
                 font-weight: 400;
@@ -99,8 +72,8 @@ footer{
             }
             >span{
                 position: absolute;
-                left: -16px;
-                bottom: -60px;
+                left: 0px;
+                bottom: -68px;
                 font-size: 1.6rem;
                 color: #E61C40;
             }
@@ -145,6 +118,35 @@ footer{
     }   
 }
 
+.input-wrapper{
+    >input{
+        width:clamp(30rem, calc(60vw + 10rem), 61.7rem);
+        height: 5rem;
+        background: black;
+        border: 4px solid transparent;
+        border-bottom: 2px solid #FFFCF3;
+        border-top: 3px solid transparent;
+        font-family: 'Overpass';
+        color: white;
+        font-weight: 400;
+        font-size: 1.8rem;
+        padding: 0 16px;
+        &:hover{
+            border: 4px solid #FFFCF3;
+            cursor: pointer;
+        }
+        &::placeholder{
+            font-family: 'Overpass';
+            font-weight: 400;
+            font-size: 1.8rem;
+            color: white;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
 .checkbox-wrapper{
     display: flex;
     justify-content: center;
@@ -163,8 +165,10 @@ footer{
         font-weight: 400;
         color: #FFFCF3;
         margin-left: 1.6rem;
+        margin-bottom: 0 !important;
         >a{
             color: #00BC8F;
+            padding:0 6px;
         }
     }
 }
