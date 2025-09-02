@@ -1,14 +1,12 @@
 nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
+    width: min(1440px ,100%);
     height: 10rem;
     padding-left: min(12rem, 6%);
-    padding-right:min(12rem, 6%);
+    padding-right: min(12rem, 6%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255,252,243);
+    z-index: 99;
     >img{
         width: 12rem;
         height: 6rem;
@@ -29,6 +27,15 @@ nav{
         }
         }
     }
+}
+
+.nav-wrapper{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255,252,243);
+    display: flex;
+    justify-content: center;
 }
 
 .language-wrapper {
@@ -126,11 +133,6 @@ nav{
     z-index: 6;
     transform: translateX(100%);
     transition: transform 0.3s ease;
-    padding: 2rem;
-    background-image: url('./../../assets/img/background\ overlay.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 37rem;
     >ul{
         overflow: hidden;
         list-style: none;
@@ -184,13 +186,26 @@ nav{
   transform: translateX(0);
 }
 
-.overlay-links{
+.overlay-links-warapper{
     width: 100%;
+    height: 30vh;
+    background-image: url(./../../assets/img/overlay_background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay-links{
+    width: min(1440px ,100%);
     display: flex;
     justify-content: space-between;
     padding-left: min(12rem, 6%);
     padding-right:min(12rem, 6%);
+    padding-bottom: 3vh;
     >div:nth-child(1){
+        align-self: center;
         >p:nth-child(1){
             color: #FFFCF3;
             font-family: 'Syne';

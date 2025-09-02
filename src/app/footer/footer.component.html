@@ -1,89 +1,91 @@
-<footer>
-    <h2>{{"footer.h2" | translate }}</h2>
-    <div class="contact-container">
-        <p>{{"footer.description1" | translate }}</p>
-        <p>{{"footer.description2" | translate }}</p>
-        <form #form="ngForm">
-            <div class="input-wrapper">
-                <input 
-                (focus)="usernameFocus = true"
-                (blur)="usernameFocus = false"
-                [class.infocus]="usernameFocus || userName.length > 0"
-                [(ngModel)]="userName"
-                #name="ngModel"
-                required [placeholder]="!usernameFocus ? 'Your name' : ''" type="text" name="name" />
-                <div class="input-image">
-                    <img 
-                    *ngIf="name.valid && name.touched"
-                    src="./assets/icons/accepted.svg" alt="accepted">
-                    <img 
-                    *ngIf="name.invalid && name.touched" 
-                    src="./assets/icons/required.svg" alt="required">
+<div class="footer-wrapper">
+    <footer>
+        <h2>{{"footer.h2" | translate }}</h2>
+        <div class="contact-container">
+            <p>{{"footer.description1" | translate }}</p>
+            <p>{{"footer.description2" | translate }}</p>
+            <form #form="ngForm">
+                <div class="input-wrapper">
+                    <input 
+                    (focus)="usernameFocus = true"
+                    (blur)="usernameFocus = false"
+                    [class.infocus]="usernameFocus || userName.length > 0"
+                    [(ngModel)]="userName"
+                    #name="ngModel"
+                    required [placeholder]="!usernameFocus ? 'Your name' : ''" type="text" name="name" />
+                    <div class="input-image">
+                        <img 
+                        *ngIf="name.valid && name.touched"
+                        src="./assets/icons/accepted.svg" alt="accepted">
+                        <img 
+                        *ngIf="name.invalid && name.touched" 
+                        src="./assets/icons/required.svg" alt="required">
+                    </div>
+                    <span *ngIf="name.invalid && name.touched">Your name is reguired</span>
+                    <p class="place-holder" *ngIf="usernameFocus || userName.length > 0">Your name</p>
                 </div>
-                <span *ngIf="name.invalid && name.touched">Your name is reguired</span>
-                <p class="place-holder" *ngIf="usernameFocus || userName.length > 0">Your name</p>
-            </div>
-            <div class="input-wrapper">
-                <input 
-                (focus)="emailFocus = true"
-                (blur)="emailFocus = false"
-                [class.infocus]="emailFocus || eMail.length > 0"
-                [(ngModel)]="eMail"
-                #mail="ngModel"
-                required [placeholder]="!emailFocus ? 'Your email' : ''" type="email" name="email" />
-                <div class="input-image">
-                    <img
-                    *ngIf="mail.valid && mail.touched" src="./assets/icons/accepted.svg" alt="accepted">
-                    <img 
-                    *ngIf="mail.invalid && mail.touched"
-                    src="./assets/icons/required.svg" alt="required">
+                <div class="input-wrapper">
+                    <input 
+                    (focus)="emailFocus = true"
+                    (blur)="emailFocus = false"
+                    [class.infocus]="emailFocus || eMail.length > 0"
+                    [(ngModel)]="eMail"
+                    #mail="ngModel"
+                    required [placeholder]="!emailFocus ? 'Your email' : ''" type="email" name="email" />
+                    <div class="input-image">
+                        <img
+                        *ngIf="mail.valid && mail.touched" src="./assets/icons/accepted.svg" alt="accepted">
+                        <img 
+                        *ngIf="mail.invalid && mail.touched"
+                        src="./assets/icons/required.svg" alt="required">
+                    </div>
+                    <span *ngIf="mail.invalid && mail.touched">Your email is reguired</span>
+                    <p class="place-holder" *ngIf="emailFocus || eMail.length > 0">Your email</p>
                 </div>
-                <span *ngIf="mail.invalid && mail.touched">Your email is reguired</span>
-                <p class="place-holder" *ngIf="emailFocus || eMail.length > 0">Your email</p>
+                <div>
+                    <textarea 
+                    (focus)="messageFocus = true"
+                    (blur)="messageFocus = false"
+                    [class.infocus]="messageFocus || message.length > 0"
+                    [(ngModel)]="message"
+                    #messageInput="ngModel"
+                    required [placeholder]="!messageFocus ? 'Your message' : ''" rows="4" name="message"></textarea>
+                    <div class="text-image">
+                        <img
+                        *ngIf="messageInput.valid && messageInput.touched" src="./assets/icons/accepted.svg" alt="accepted">
+                        <img 
+                        *ngIf="messageInput.invalid && messageInput.touched"
+                        src="./assets/icons/required.svg" alt="required">
+                    </div>
+                    <span *ngIf="messageInput.invalid && messageInput.touched">Your message is empty</span>
+                    <p class="place-holder" [class.place-holder-text]="messageFocus || message.length" *ngIf="messageFocus || message.length > 0">Your message</p>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input 
+                    name="privacy"
+                    [(ngModel)]="acceptedPrivacy"
+                    #privacy="ngModel"
+                    required type="checkbox">
+                    <span>{{"footer.privacyPolicy1" | translate }} <a href="#">{{"footer.privacyPolicy2" | translate }} </a> {{"footer.privacyPolicy3" | translate }}</span>
+                </div>
+                <button type="submit" [disabled]="form.invalid">Absenden</button>
+            </form>
+        </div>
+        <div class="icon-area">
+            <div>
+                <img src="assets/img/vm_logo_transparent.png" alt="">
+                <p>&copy; Vadim Michel 2025</p>
+                <p class="legal-notic-responsive">{{"footer.LegalNotics" | translate }}</p>
             </div>
             <div>
-                <textarea 
-                (focus)="messageFocus = true"
-                (blur)="messageFocus = false"
-                [class.infocus]="messageFocus || message.length > 0"
-                [(ngModel)]="message"
-                #messageInput="ngModel"
-                required [placeholder]="!messageFocus ? 'Your message' : ''" rows="4" name="message"></textarea>
-                <div class="text-image">
-                    <img
-                    *ngIf="messageInput.valid && messageInput.touched" src="./assets/icons/accepted.svg" alt="accepted">
-                    <img 
-                    *ngIf="messageInput.invalid && messageInput.touched"
-                    src="./assets/icons/required.svg" alt="required">
+                <div class="arrow-container">
+                    <img src="assets/icons/arrow_up.png" alt="">
                 </div>
-                <span *ngIf="messageInput.invalid && messageInput.touched">Your message is empty</span>
-                <p class="place-holder" [class.place-holder-text]="messageFocus || message.length" *ngIf="messageFocus || message.length > 0">Your message</p>
+                <div>
+                    <img src="assets/icons/git.png" alt=""><img src="assets/icons/linkedin.png" alt=""><img src="assets/icons/mail.png" alt="">
+                </div>
+                <p>{{"footer.LegalNotics" | translate }}</p>
             </div>
-            <div class="checkbox-wrapper">
-                <input 
-                name="privacy"
-                [(ngModel)]="acceptedPrivacy"
-                #privacy="ngModel"
-                required type="checkbox">
-                <span>{{"footer.privacyPolicy1" | translate }} <a href="#">{{"footer.privacyPolicy2" | translate }} </a> {{"footer.privacyPolicy3" | translate }}</span>
-            </div>
-            <button type="submit" [disabled]="form.invalid">Absenden</button>
-        </form>
-    </div>
-    <div class="icon-area">
-        <div>
-            <img src="assets/img/vm_logo_transparent.png" alt="">
-            <p>&copy; Vadim Michel 2025</p>
-            <p class="legal-notic-responsive">{{"footer.LegalNotics" | translate }}</p>
         </div>
-        <div>
-            <div class="arrow-container">
-                <img src="assets/icons/arrow_up.png" alt="">
-            </div>
-            <div>
-                <img src="assets/icons/git.png" alt=""><img src="assets/icons/linkedin.png" alt=""><img src="assets/icons/mail.png" alt="">
-            </div>
-            <p>{{"footer.LegalNotics" | translate }}</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+</div>

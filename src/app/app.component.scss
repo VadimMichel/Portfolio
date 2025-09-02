@@ -1,12 +1,11 @@
-.max-width{
-    width: 100%;
-}
-
 .z-index-3{
-    z-index: 3;
+    z-index: 99 !important;
+    display: flex;
+    justify-content: center;
 }
 
 .margin-l-r-12{
     margin-left:min(12rem, 6%);
     margin-right:min(12rem, 6%);
+    justify-self: center;
 }

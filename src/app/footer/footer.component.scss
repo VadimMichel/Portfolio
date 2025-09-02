@@ -1,11 +1,6 @@
 footer{
-    padding-top: 16rem;
-    width: 100%;
-    min-height: 106rem;
-    background-image: url('./../../assets/img/Rectangle\ 5.png');
-    background-size: cover;
-    padding-left: min(12rem, 6%);
-    padding-right:min(12rem, 6%);
+    width: 1440px;
+    justify-self: center;
     >h2{
         width: 42.8rem;
         color: #FFFCF3;
@@ -282,6 +277,16 @@ button:disabled {
 
 .legal-notic-responsive{
     margin-top: 2rem;
+}
+
+.footer-wrapper{
+    padding-top: 20rem;
+    width: 100%;
+    min-height: 111rem;
+    background-image: url('./../../assets/img/Rectangle\ 5.png');
+    background-size: cover;
+    padding-left: min(12rem, 6%);
+    padding-right:min(12rem, 6%);
 }
 
 @keyframes icon-animation{
