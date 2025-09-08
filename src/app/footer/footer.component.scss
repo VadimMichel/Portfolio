@@ -1,5 +1,5 @@
 footer{
-    width: 1440px;
+    width: min(1440px, 100%);
     justify-self: center;
     >h2{
         width: 42.8rem;
@@ -285,8 +285,8 @@ button:disabled {
     min-height: 111rem;
     background-image: url('./../../assets/img/Rectangle\ 5.png');
     background-size: cover;
-    padding-left: min(12rem, 6%);
-    padding-right:min(12rem, 6%);
+    padding-left: min(6rem, 3%);
+    padding-right: min(6rem, 3%);
 }
 
 @keyframes icon-animation{

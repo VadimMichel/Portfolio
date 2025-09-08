@@ -1,8 +1,8 @@
 nav{
     width: min(1440px ,100%);
     height: 10rem;
-    padding-left: min(12rem, 6%);
-    padding-right: min(12rem, 6%);
+    padding-left: min(6rem, 3%);
+    padding-right: min(6rem, 3%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -201,8 +201,8 @@ nav{
     width: min(1440px ,100%);
     display: flex;
     justify-content: space-between;
-    padding-left: min(12rem, 6%);
-    padding-right:min(12rem, 6%);
+    padding-left: min(6rem, 3%);
+    padding-right:min(6rem, 3%);
     padding-bottom: 3vh;
     >div:nth-child(1){
         align-self: center;

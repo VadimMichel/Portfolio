@@ -1,3 +1,6 @@
 .content-wrapper{
-    max-width: 1440px;
+    width: min(1440px, 100%);
+    padding-left: min(6rem, 3%);
+    padding-right: min(6rem, 3%);
+    justify-self: center;
 }
