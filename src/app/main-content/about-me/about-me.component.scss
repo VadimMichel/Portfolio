@@ -76,7 +76,16 @@ h2{
     transform: translate(0, 0);
   }
   to {
-    transform: translate(-20vw, 20vh);
+    transform: translate(-400px, 100px);
+  }
+}
+
+@keyframes arrow-animation-responsive {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-20vw, 10vh);
   }
 }
 
@@ -157,6 +166,12 @@ h2{
     }
     to{
         opacity: 1;
+    }
+}
+
+@media(max-width: 1000px){
+    .arrow.animate {
+        animation: arrow-animation-responsive 800ms ease forwards;
     }
 }
 
