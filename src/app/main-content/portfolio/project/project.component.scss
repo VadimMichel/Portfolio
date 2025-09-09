@@ -127,7 +127,7 @@ section{
     position: relative;
     display: inline-block;
     >img{
-        width:clamp(29rem, calc(40vw + 10rem), 61.7rem);
+        width:clamp(25rem, calc(40vw + 10rem), 61.7rem);
         height: clamp(20rem, calc(20vw + 10rem), 39.3rem);
         filter: grayscale(100%);
     }
@@ -135,7 +135,7 @@ section{
 
 .image-wrapper::after {
     content: "";
-    width: clamp(29rem, calc(40vw + 10rem), 61.7rem);
+    width: clamp(25rem, calc(40vw + 10rem), 61.7rem);
     height: clamp(20rem, calc(20vw + 10rem), 39.3rem);
     position: absolute;
     top: 30px;
