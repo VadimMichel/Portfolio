@@ -61,11 +61,14 @@
                     <p class="place-holder" [class.place-holder-text]="messageFocus || message.length" *ngIf="messageFocus || message.length > 0">Your message</p>
                 </div>
                 <div class="checkbox-wrapper">
-                    <input 
-                    name="privacy"
-                    [(ngModel)]="acceptedPrivacy"
-                    #privacy="ngModel"
-                    required type="checkbox">
+                    <label class="container">
+                        <input 
+                        name="privacy"
+                        [(ngModel)]="acceptedPrivacy"
+                        #privacy="ngModel"
+                        required type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
                     <span>{{"footer.privacyPolicy1" | translate }} <a href="#">{{"footer.privacyPolicy2" | translate }} </a> {{"footer.privacyPolicy3" | translate }}</span>
                 </div>
                 <button type="submit" [disabled]="form.invalid">Absenden</button>
