@@ -145,6 +145,16 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    &:has(.container:hover),
+    &:has(span a:hover) {
+        .container {
+        background: #00BC8F;
+        }
+        span a {
+        transform: scale(1.03);
+        color: #00BC8F;
+        }
+    }
     >span{
         display: flex;
         align-items: center;
@@ -155,13 +165,16 @@ footer{
         margin-left: 1.6rem;
         margin-bottom: 0 !important;
         >a{
-            color: #00BC8F;
+            color: #007659;
             padding:0 6px;
         }
     }
 }
 
 .container {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
     >input{
         position: absolute;
         opacity: 0;
@@ -175,10 +188,10 @@ footer{
     position: absolute;
     top: 50%;
     transform: translatey(-50%);
-    left: -9px;
+    left: 3px;
     height: 18px;
     width: 18px;
-    background-color: black;
+    background-color: transparent;
     border: 2px solid #FFFCF3;
     border-radius: 3px;
     &:hover{
