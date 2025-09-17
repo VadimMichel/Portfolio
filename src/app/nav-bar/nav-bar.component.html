@@ -19,18 +19,19 @@
         <div class="mobile-menu" [class.active]="isMenuOpen">
             <ul>
                 <li>
-                    <a href="#">{{"aboutMe.h2" | translate }}
+                    <a (click)="toggleMenu()" href="#aboutMe">{{"aboutMe.h2" | translate }}
                         <img class="default-img" src="assets/icons/overlay-animation-default.svg" alt="">
                         <img class="animation-img" src="assets/icons/overlay-animation.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="#">{{"mySkills.h2" | translate }}
+                    <a (click)="toggleMenu()" href="#mySkills">{{"mySkills.h2" | translate }}
                         <img class="default-img" src="assets/icons/overlay-animation-default.svg" alt="">
                         <img class="animation-img" src="assets/icons/overlay-animation.svg" alt="">
                     </a>
                 </li>
-                <li><a href="#">Portfolio
+                <li>
+                    <a (click)="toggleMenu()" href="#portfolio">Portfolio
                         <img class="default-img" src="assets/icons/overlay-animation-default.svg" alt="">
                         <img class="animation-img" src="assets/icons/overlay-animation.svg" alt="">
                     </a>
@@ -43,8 +44,8 @@
                         <p><a href="mailto:vadimmichel5@gmail.com">vadimmichel5&commat;gmail.com</a></p>
                     </div>
                     <div>
-                        <a href="#"><img src="assets/icons/git.png" alt=""></a>
-                        <a href="#"><img src="assets/icons/linkedin.png" alt=""></a>
+                        <a href="https://www.github.com/VadimMichel" target="_blank"><img src="assets/icons/git.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/vadim-michel-088792239/?lipi=urn%3Ali%3Apage%3Ad_flagship3_notifications%3BY7T%2BrF6ZT1656PYLN9go3w%3D%3D" target="_blank"><img src="assets/icons/linkedin.png" alt=""></a>
                         <a href="mailto:vadimmichel5@gmail.com"><img src="assets/icons/mail.png" alt=""></a>
                     </div>
                 </div>
