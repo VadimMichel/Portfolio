@@ -12,7 +12,7 @@
                     [class.infocus]="usernameFocus || contactData.userName.length > 0"
                     [(ngModel)]="contactData.userName"
                     #name="ngModel"
-                    required [placeholder]="!usernameFocus ? 'Your name' : ''" type="text" name="name" />
+                    required [placeholder]="!usernameFocus ? ('footer.name' | translate ) : ''" type="text" name="name" />
                     <div class="input-image">
                         <img 
                         *ngIf="name.valid && name.touched"
@@ -21,8 +21,8 @@
                         *ngIf="name.invalid && name.touched" 
                         src="./assets/icons/required.svg" alt="required">
                     </div>
-                    <span *ngIf="name.invalid && name.touched">Your name is reguired</span>
-                    <p class="place-holder" *ngIf="usernameFocus || contactData.userName.length > 0">Your name</p>
+                    <span *ngIf="name.invalid && name.touched">{{"footer.invalidName" | translate }}</span>
+                    <p class="place-holder" *ngIf="usernameFocus || contactData.userName.length > 0">{{"footer.name" | translate }}</p>
                 </div>
                 <div class="input-wrapper">
                     <input 
@@ -31,7 +31,7 @@
                     [class.infocus]="emailFocus || contactData.eMail.length > 0"
                     [(ngModel)]="contactData.eMail"
                     #mail="ngModel"
-                    required [placeholder]="!emailFocus ? 'Your email' : ''" type="email" name="email" 
+                    required [placeholder]="!emailFocus ? ('footer.email' | translate ) : ''" type="email" name="email" 
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
                     <div class="input-image">
                         <img
@@ -40,8 +40,8 @@
                         *ngIf="mail.invalid && mail.touched"
                         src="./assets/icons/required.svg" alt="required">
                     </div>
-                    <span *ngIf="mail.invalid && mail.touched">Your email is reguired</span>
-                    <p class="place-holder" *ngIf="emailFocus || contactData.eMail.length > 0">Your email</p>
+                    <span *ngIf="mail.invalid && mail.touched">{{"footer.invalidMail" | translate }}</span>
+                    <p class="place-holder" *ngIf="emailFocus || contactData.eMail.length > 0">{{"footer.email" | translate }}</p>
                 </div>
                 <div>
                     <textarea 
@@ -51,7 +51,7 @@
                     [(ngModel)]="contactData.message"
                     #messageInput="ngModel"
                     minlength="4"
-                    required [placeholder]="!messageFocus ? 'Your message' : ''" rows="4" name="message"></textarea>
+                    required [placeholder]="!messageFocus ? ('footer.message' | translate) : ''" rows="4" name="message"></textarea>
                     <div class="text-image">
                         <img
                         *ngIf="messageInput.valid && messageInput.touched" src="./assets/icons/accepted.svg" alt="accepted">
@@ -59,8 +59,8 @@
                         *ngIf="messageInput.invalid && messageInput.touched"
                         src="./assets/icons/required.svg" alt="required">
                     </div>
-                    <span *ngIf="messageInput.invalid && messageInput.touched">Your message is empty</span>
-                    <p class="place-holder" [class.place-holder-text]="messageFocus || contactData.message.length" *ngIf="messageFocus || contactData.message.length > 0">Your message</p>
+                    <span *ngIf="messageInput.invalid && messageInput.touched">{{"footer.invalidMessage" | translate }}</span>
+                    <p class="place-holder" [class.place-holder-text]="messageFocus || contactData.message.length" *ngIf="messageFocus || contactData.message.length > 0">{{"footer.message" | translate }}</p>
                 </div>
                 <div class="checkbox-wrapper">
                     <label class="container">
@@ -73,7 +73,8 @@
                     </label>
                     <span>{{"footer.privacyPolicy1" | translate }} <a href="#">{{"footer.privacyPolicy2" | translate }} </a> {{"footer.privacyPolicy3" | translate }}</span>
                 </div>
-                <button type="submit" [disabled]="contactForm.invalid">Absenden</button>
+                <p class="error" *ngIf="privacy.invalid && privacy.touched">{{"footer.invalidPrivacyPolicy" | translate }}</p>
+                <button type="submit" [disabled]="contactForm.invalid">{{"footer.button" | translate }}</button>
             </form>
         </div>
         <div class="icon-area">

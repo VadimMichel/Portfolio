@@ -34,6 +34,13 @@
         "privacyPolicy2" : "privacy policy",
         "privacyPolicy3" : "and agree to the processing of my data as outlined",
         "LegalNotics" : "Legal notics",
-        "button" : "Send message"
+        "button" : "Send message",
+        "invalidName" : "Your name is reguired",
+        "invalidMail" : "Your email is reguired",
+        "invalidMessage" : "Your message is empty",
+        "invalidPrivacyPolicy" : "Please accept the privacy policy",
+        "name" : "Your name",
+        "email" : "Your email",
+        "message" : "Your message"
     }
 }

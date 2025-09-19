@@ -34,6 +34,13 @@
         "privacyPolicy2" : "Datenschutzrichtlinie",
         "privacyPolicy3" : "gelesen und willige in die Verarbeitung meiner Daten gemäß dieser ein.",
         "LegalNotics" : "Impressum",
-        "button" : "absenden"
+        "button" : "Absenden",
+        "invalidName" : "Bitte Namen angeben.",
+        "invalidMail" : "Bitte Email angeben.",
+        "invalidMessage" : "Bitte eine Nachricht eingeben.",
+        "invalidPrivacyPolicy" : "Bitte akzeptieren Sie die Datenschutzrichtlinie.",
+        "name" : "Ihr Name",
+        "email" : "Ihre Email",
+        "message" : "Ihre Nachricht"
     }
 }

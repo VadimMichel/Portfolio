@@ -112,6 +112,14 @@ footer{
     }   
 }
 
+.error{
+    position: absolute;
+    left: 36px;
+    bottom: 85px;
+    font-size: 1.6rem;
+    color: #E61C40;
+}
+
 .input-wrapper{
     >input{
         width:clamp(30rem, calc(60vw + 10rem), 61.7rem);
