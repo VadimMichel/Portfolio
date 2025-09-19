@@ -180,7 +180,7 @@ h2[id] {
 
 @media(max-width: 900px ){
     .image-wrapper::after{
-        animation: image-animation 3s ease infinite;
+        animation: image-animation 2s ease infinite alternate;
         top: 1rem;
         left: 1rem;
         right: -1rem;

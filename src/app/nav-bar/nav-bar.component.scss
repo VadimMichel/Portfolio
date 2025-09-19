@@ -253,3 +253,18 @@ nav{
         }
     }
 }
+
+@keyframes header-animation{
+  from{
+    color: #fff;
+  }
+  to{
+    color: #00BC8F;
+  }
+}
+
+@media(max-width: 900px ){
+  .animated{
+    animation: header-animation 2s ease-in-out infinite alternate;
+  }
+}

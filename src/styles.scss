@@ -39,3 +39,18 @@ body.no-scroll {
 .width100{
   width: 100%;
 }
+
+@keyframes header-animation{
+  from{
+    color: black;
+  }
+  to{
+    color: #00BC8F;
+  }
+}
+
+@media(max-width: 900px ){
+  h2{
+    animation: header-animation 2s ease-in-out infinite alternate;
+  }
+}
