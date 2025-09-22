@@ -1,0 +1,43 @@
+section{
+    display: flex;
+    justify-content: center;
+    >div{
+        width: min(1440px, 100%);
+        padding-left: min(6rem, 3%);
+        padding-right: min(6rem, 3%);
+        font-family: "Overpass";
+        >h2{
+            font-family: "Syne";
+            font-weight: 800;
+            font-size: 7.8rem;
+            padding-top: 12rem;
+        }
+        >h3{
+            font-weight: 800;
+            font-size: 2.4rem;
+            color: #00BC8F;
+            padding-top: 3rem;
+        }
+        >p, li, a{
+            font-weight: 700;
+            font-size: 1.9rem;
+        }
+
+    }
+}
+
+span{
+    color: #00BC8F;
+}
+
+a{
+    color: #00BC8F;
+}
+
+li{
+    list-style-position: inside;
+}
+
+ul{
+    padding-top: 3rem;
+}
