@@ -81,7 +81,7 @@
             <div>
                 <img src="assets/img/vm_logo_transparent.png" alt="">
                 <p>&copy; Vadim Michel 2025</p>
-                <p class="legal-notic-responsive">{{"footer.LegalNotics" | translate }}</p>
+                <p (click)="openLegalNotice()" class="legal-notic-responsive">{{"footer.LegalNotics" | translate }}</p>
             </div>
             <div>
                 <div class="arrow-container">
@@ -95,7 +95,7 @@
                     <a href="mailto:vadimmichel5@gmail.com" target="_blank"><img src="assets/icons/mail.png" alt=""></a>
                 </div>
                 <div class="legal-notice">
-                    <p>{{"footer.LegalNotics" | translate }}</p>
+                    <p (click)="openLegalNotice()">{{"footer.LegalNotics" | translate }}</p>
                     <img src="./assets/icons/legal_notice_underline.svg" alt="underline">
                 </div>
             </div>
