@@ -2,7 +2,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core"
+import { Router } from '@angular/router';
+import { TranslatePipe, TranslateDirective } from "@ngx-translate/core"
 
 @Component({
   selector: 'app-footer',
@@ -29,6 +30,8 @@ export class FooterComponent {
   mailTest = true;
 
   http = inject(HttpClient);
+
+  constructor(private router: Router){}
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
@@ -59,4 +62,9 @@ export class FooterComponent {
       ngForm.resetForm();
     }
   }
+
+  openLegalNotice(){
+    this.router.navigateByUrl('/legal-notice');
+  }
+
 }
