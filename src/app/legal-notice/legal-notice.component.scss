@@ -1,15 +1,13 @@
 section{
     display: flex;
     justify-content: center;
+    background: white;
     >div{
         width: min(1440px, 100%);
         padding-left: min(6rem, 3%);
         padding-right: min(6rem, 3%);
         font-family: "Overpass";
         >h2{
-            font-family: "Syne";
-            font-weight: 800;
-            font-size: 7.8rem;
             padding-top: 12rem;
         }
         >h3{
