@@ -68,6 +68,9 @@ footer{
                 position: absolute;
                 left: 0px;
                 bottom: -68px;
+                font-family: 'Overpass';
+                font-weight: 400;
+                font-size: 2.3rem;
                 font-size: 1.6rem;
                 color: #E61C40;
             }
@@ -114,8 +117,11 @@ footer{
 
 .error{
     position: absolute;
-    left: 36px;
-    bottom: 85px;
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 2.3rem;
+    left: -3px;
+    bottom: -68px;
     font-size: 1.6rem;
     color: #E61C40;
 }

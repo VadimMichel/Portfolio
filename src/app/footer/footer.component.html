@@ -72,8 +72,8 @@
                         <span class="checkmark"></span>
                     </label>
                     <span>{{"footer.privacyPolicy1" | translate }} <a href="#">{{"footer.privacyPolicy2" | translate }} </a> {{"footer.privacyPolicy3" | translate }}</span>
+                    <p class="error" *ngIf="privacy.invalid && privacy.touched">{{"footer.invalidPrivacyPolicy" | translate }}</p>
                 </div>
-                <p class="error" *ngIf="privacy.invalid && privacy.touched">{{"footer.invalidPrivacyPolicy" | translate }}</p>
                 <button type="submit" [disabled]="contactForm.invalid">{{"footer.button" | translate }}</button>
             </form>
         </div>
