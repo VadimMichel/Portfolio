@@ -1,10 +1,11 @@
 import { Component, Renderer2, OnDestroy } from '@angular/core';
 import { TranslateService, TranslatePipe, TranslateDirective } from '@ngx-translate/core';
+import { SecondFooterComponent } from '../second-footer/second-footer.component';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [TranslatePipe ,TranslateDirective],
+  imports: [TranslatePipe ,TranslateDirective, SecondFooterComponent],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })
