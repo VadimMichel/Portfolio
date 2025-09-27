@@ -1,7 +1,7 @@
-<div class="footer-wrapper">
+<div class="footer-wrapper" [class.main]="shouldShowExtra()" [class.second]="!shouldShowExtra()">
     <footer>
-        <h2>{{"footer.h2" | translate }}</h2>
-        <div class="contact-container">
+        <h2 *ngIf="shouldShowExtra()">{{"footer.h2" | translate }}</h2>
+        <div *ngIf="shouldShowExtra()" class="contact-container">
             <p>{{"footer.description1" | translate }}</p>
             <p>{{"footer.description2" | translate }}</p>
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm ="ngForm">
@@ -79,13 +79,13 @@
         </div>
         <div class="icon-area">
             <div>
-                <img src="assets/img/vm_logo_transparent.png" alt="">
+                <img src="assets/img/vm_logo_transparent.png" alt="vm_logo_transparent">
                 <p>&copy; Vadim Michel 2025</p>
                 <p (click)="openLegalNotice()" class="legal-notic-responsive">{{"footer.LegalNotics" | translate }}</p>
             </div>
             <div>
                 <div class="arrow-container">
-                    <a href="">
+                    <a *ngIf="shouldShowExtra()" href="">
                         <img src="assets/icons/arrow_up.png" alt="">
                     </a>
                 </div>

@@ -1,5 +1,7 @@
 footer{
     width: min(1440px, 100%);
+    padding-left: min(6rem, 3%);
+    padding-right: min(6rem, 3%);
     justify-self: center;
     >h2{
         color: #FFFCF3;
@@ -375,11 +377,23 @@ button:disabled {
     padding-top: 20rem;
     width: 100%;
     padding-bottom: 6rem;
-    min-height: 111rem;
+}
+
+.main{
     background-image: url('./../../assets/img/Rectangle\ 5.png');
     background-size: cover;
-    padding-left: min(6rem, 3%);
-    padding-right: min(6rem, 3%);
+    min-height: 111rem;
+}
+
+.second{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url('./../../assets/img/Rectangle\ 5.png');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 @keyframes icon-animation{
@@ -395,6 +409,7 @@ button:disabled {
     .arrow-container{
         display: none;
     }
+
     .icon-area{
         flex-direction: column-reverse;
         align-items: center;
@@ -419,6 +434,7 @@ button:disabled {
 
     .footer-wrapper{
         padding-bottom: 0;
+        padding-top: 6rem;
     }
 }
 
