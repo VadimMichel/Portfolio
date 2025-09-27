@@ -31,7 +31,17 @@ export class FooterComponent {
 
   http = inject(HttpClient);
 
-  constructor(private router: Router){}
+  currentRoute = "";
+
+  constructor(private router: Router){
+    this.router.events.subscribe(() => {
+    this.currentRoute = this.router.url;
+  });
+  }
+
+  shouldShowExtra(): boolean {
+    return !(this.currentRoute.includes('privacy-policy') || this.currentRoute.includes('legal-notice'));
+  }
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
