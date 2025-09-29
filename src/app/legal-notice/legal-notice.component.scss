@@ -1,7 +1,11 @@
 section{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: white;
+    padding-bottom: 3rem;
+    min-height: calc(100vh - 64.8rem);
     >div{
         width: min(1440px, 100%);
         padding-left: min(6rem, 3%);
@@ -38,4 +42,8 @@ li{
 
 ul{
     padding-top: 3rem;
+}
+
+.max-width{
+    width: 100%;
 }
