@@ -182,6 +182,9 @@ footer{
             color: #007659;
             padding:0 6px;
             white-space: nowrap;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }

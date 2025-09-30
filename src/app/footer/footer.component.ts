@@ -77,4 +77,8 @@ export class FooterComponent {
     this.router.navigateByUrl('/legal-notice');
   }
 
+  openRouterlink(url : string){
+    this.router.navigateByUrl(url);
+  }
+
 }
