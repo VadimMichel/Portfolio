@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { TranslatePipe, TranslateDirective } from "@ngx-translate/core"
+import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-translate/core"
 
 @Component({
   selector: 'app-footer',
@@ -26,17 +26,22 @@ export class FooterComponent {
   emailFocus: boolean = false;
   messageFocus: boolean = false;
   acceptedPrivacy: boolean = false;
-
   mailTest = true;
-
   http = inject(HttpClient);
-
   currentRoute = "";
+  currentLang: string = 'en';
 
-  constructor(private router: Router){
+  constructor(private router: Router, private translate: TranslateService){
     this.router.events.subscribe(() => {
-    this.currentRoute = this.router.url;
-  });
+      this.currentRoute = this.router.url;
+    });
+  }
+
+  ngOnInit(): void {
+    this.currentLang = this.translate.currentLang || this.translate.getDefaultLang();
+    this.translate.onLangChange.subscribe(event => {
+      this.currentLang = event.lang;
+    });
   }
 
   shouldShowExtra(): boolean {

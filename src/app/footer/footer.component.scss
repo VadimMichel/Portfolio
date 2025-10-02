@@ -301,13 +301,6 @@ button:disabled {
 }
 
 .legal-notice{
-    &:hover{
-        cursor: pointer;
-        >img{
-            opacity: 1;
-            animation: underlineAnimation 250ms ease forwards;
-        }
-    }
     >p{
         font-family: 'Overpass';
         font-weight: 400;
@@ -316,6 +309,26 @@ button:disabled {
     }
     >img{
         opacity: 0;
+    }
+}
+
+.animate-de{
+    &:hover{
+        cursor: pointer;
+        >img{
+            opacity: 1;
+            animation: underlineAnimationDe 250ms ease forwards;
+        }
+    }
+}
+
+.animate-en{
+    &:hover{
+        cursor: pointer;
+        >img{
+            opacity: 1;
+            animation: underlineAnimationEn 250ms ease forwards;
+        }
     }
 }
 
@@ -337,12 +350,21 @@ button:disabled {
     top: 24px;
 }
 
-@keyframes underlineAnimation{
+@keyframes underlineAnimationDe{
     from{
         transform: translateX(0);
     }
     to{
-        transform: translateX(60px);
+        transform: translateX(50px);
+    }
+}
+
+@keyframes underlineAnimationEn{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(15px);
     }
 }
 
