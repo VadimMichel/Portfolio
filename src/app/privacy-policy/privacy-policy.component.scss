@@ -1,0 +1,67 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding-bottom: 3rem;
+    min-height: calc(100vh - 64.8rem);
+    >div{
+        width: min(1440px, 100%);
+        padding-left: min(6rem, 3%);
+        padding-right: min(6rem, 3%);
+        font-family: "Overpass";
+        >h2{
+            padding-top: 12rem;
+        }
+        >h3{
+            font-weight: 800;
+            font-size: 2.4rem;
+            color: #00BC8F;
+            padding-top: 3rem;
+        }
+        >h5, h4{
+            font-weight: 700;
+            font-size: 2.1rem;
+            padding:1.4rem 0;
+            color: #00BC8F;
+        }
+        >h5{
+            font-size: 1.9rem;
+        }
+        >p, li, a{
+            font-weight: 700;
+            font-size: 1.9rem;
+        }
+
+    }
+}
+
+span{
+    color: #00BC8F;
+}
+
+a{
+    color: #00BC8F;
+    word-break: break-word;  
+}
+
+li{
+    list-style-position: inside;
+}
+
+ul{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.max-width{
+    width: 100%;
+}
+
+@media(max-width: 425px){
+    h2{
+        padding-top: 12rem;
+        word-break: break-all;
+    }
+}
