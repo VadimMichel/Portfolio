@@ -16,11 +16,11 @@ interface Reference{
 })
 export class ReferencesComponent {
   reference: Reference[] = [{
-    name : 'Max Mustermann',
+    name : 'Simon Fuchs',
     comment : 'references.reference1'
   },
   {
-    name : 'Max Mustermann',
+    name : 'Robin Angelé',
     comment : 'references.reference2'
   },
   {
