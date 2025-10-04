@@ -1,12 +1,13 @@
 <section appScrollAnimate="animate" [class.project2]="projectData.rowRewerse">
     <div>
+        <p class="project-count">{{ index + 1 }} / {{ totalProjects }}</p>
         <div class="image-wrapper">
             <img src={{projectData.imgaeUrl}} alt="join-image">
         </div>
         <img class="arrow-down" src="assets/icons/sircle-arrow-down.svg" alt="">
     </div>
     <div>
-        <p>{{ index + 1 }} / {{ totalProjects }}</p>
+        <p class="project-count">{{ index + 1 }} / {{ totalProjects }}</p>
         <div class="project-info">
             <h3>{{projectData.name | translate}}</h3>
             <p>{{projectData.usedSkills | translate}}</p>
