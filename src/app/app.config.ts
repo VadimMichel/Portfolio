@@ -13,8 +13,8 @@ const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: Http
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes,
     withInMemoryScrolling({
-        scrollPositionRestoration: 'enabled', // scrollt bei Navigation nach oben
-        anchorScrolling: 'enabled',           // erlaubt Sprünge zu #anchor
+        scrollPositionRestoration: 'enabled', 
+        anchorScrolling: 'enabled',          
       })
   ),
     provideHttpClient(),

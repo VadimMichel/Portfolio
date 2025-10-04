@@ -270,6 +270,9 @@ button:disabled {
         >img{
            width: 11.6rem; 
            height: 10rem;
+           &:hover{
+            cursor: pointer;
+           }
         }
         >p{
             font-family: 'Overpass';
@@ -380,16 +383,16 @@ button:disabled {
 .arrow-container{
     height: 10rem;
     overflow: hidden;
-    >a{
-        >img{
-            transform: scaleY(1.6) translateY(30px);
-            justify-self: center;
-            padding-bottom: 4rem;
-            z-index: 1;
-            &:hover{
-                transition: 250ms ease;
-                transform: scaleY(1.6) translateY(10px);
-            }
+
+    >img{
+        transform: scaleY(1.6) translateY(30px);
+        justify-self: center;
+        padding-bottom: 4rem;
+        z-index: 1;
+        &:hover{
+            cursor: pointer;
+            transition: 250ms ease;
+            transform: scaleY(1.6) translateY(10px);
         }
     }
 }

@@ -86,4 +86,18 @@ export class FooterComponent {
     this.router.navigateByUrl(url);
   }
 
+  scrollToHero(): void {
+    this.router.navigate(['/'], { fragment: 'hero' }).then(() => {
+    
+      setTimeout(() => {
+        const el = document.getElementById('hero');
+        if (el) {
+          const style = getComputedStyle(el);
+          const marginTop = parseInt(style.marginTop, 10) || 0;
+          const top = el.getBoundingClientRect().top + window.scrollY - marginTop;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 50);
+    });
+  }
 }

@@ -79,15 +79,13 @@
         </div>
         <div class="icon-area">
             <div>
-                <img src="assets/img/vm_logo_transparent.png" alt="vm_logo_transparent">
+                <img (click)="scrollToHero()" src="assets/img/vm_logo_transparent.png" alt="vm_logo_transparent">
                 <p>&copy; Vadim Michel 2025</p>
                 <p (click)="openLegalNotice()" class="legal-notic-responsive">{{"footer.LegalNotics" | translate }}</p>
             </div>
             <div>
                 <div class="arrow-container">
-                    <a *ngIf="shouldShowExtra()" href="">
-                        <img src="assets/icons/arrow_up.png" alt="">
-                    </a>
+                    <img *ngIf="shouldShowExtra()" (click)="scrollToHero()" src="assets/icons/arrow_up.png" alt="arrow_up">
                 </div>
                 <div>
                     <a href="https://www.github.com/VadimMichel" target="_blank"><img src="assets/icons/git.png" alt=""></a>
