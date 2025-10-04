@@ -22,7 +22,7 @@ export class ScrollAnimateDirective implements AfterViewInit {
           observer.unobserve(this.el.nativeElement); 
         }
       },
-      { threshold: 0.3 }
+      { threshold: 1 }
     );
 
     observer.observe(this.el.nativeElement);

@@ -5,25 +5,6 @@ section {
   margin-bottom: 16rem;
   gap: 10rem;
 
-  &:hover .image-wrapper img {
-    transition: 250ms ease;
-    filter: grayscale(0%);
-  }
-
-  &:hover .image-wrapper::after {
-    opacity: 1;
-  }
-
-  &:hover .project-info {
-    animation: contant-animation 250ms ease forwards;
-    opacity: 1;
-  }
-
-  &:hover .arrow-down {
-    opacity: 1;
-    animation: arrow-animation 250ms ease forwards;
-  }
-
   >div:nth-child(1) {
     display: flex;
   }
@@ -55,18 +36,9 @@ section {
     align-items: flex-start;
   }
 
-  &:hover .project-info {
-    animation: content-animation-reverse 250ms ease forwards;
-    opacity: 1;
-  }
-
   .arrow-down {
     right: auto;
     left: -70px;
-  }
-
-  &:hover .arrow-down {
-    animation: arrow-animation-reverse 250ms ease forwards;
   }
 }
 
@@ -193,6 +165,41 @@ section {
   }
 }
 
+@media(min-width: 1001px){
+  section{
+    &:hover .image-wrapper img {
+      transition: 250ms ease;
+      filter: grayscale(0%);
+    }
+  
+    &:hover .image-wrapper::after {
+      opacity: 1;
+    }
+  
+    &:hover .project-info {
+      animation: contant-animation 250ms ease forwards;
+      opacity: 1;
+    }
+  
+    &:hover .arrow-down {
+      opacity: 1;
+      animation: arrow-animation 250ms ease forwards;
+    }
+  }
+
+  .project2 {
+
+    &:hover .project-info {
+      animation: content-animation-reverse 250ms ease forwards;
+      opacity: 1;
+    }
+
+    &:hover .arrow-down {
+      animation: arrow-animation-reverse 250ms ease forwards;
+    }
+  }
+}
+
 @media(max-width:1000px) {
   section {
     flex-direction: column;
@@ -234,19 +241,43 @@ section {
       align-items: flex-start;
     }
 
-    &:hover .project-info {
-      animation: content-animation-reverse 250ms ease forwards;
-      opacity: 1;
-    }
-
     .arrow-down {
       right: auto;
       left: -44px;
     }
+  }
 
-    &:hover .arrow-down {
-      animation: arrow-animation-reverse 250ms ease forwards;
+  .animate{
+    .image-wrapper img {
+      transition: 250ms ease;
+      filter: grayscale(0%);
     }
+
+    .image-wrapper::after {
+      opacity: 1;
+    }
+
+    .project-info {
+      animation: contant-animation 250ms ease forwards;
+      opacity: 1;
+    }
+
+    .arrow-down {
+      opacity: 1;
+      animation: arrow-animation 250ms ease forwards;
+    }
+
+    .project2{
+      .arrow-down {
+        animation: arrow-animation-reverse 250ms ease forwards;
+      }
+
+      .project-info {
+      animation: content-animation-reverse 250ms ease forwards;
+      opacity: 1;
+    }
+    }
+
   }
 }
 
