@@ -7,11 +7,13 @@ nav{
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    >img{
-        width: 12rem;
-        height: 6rem;
-        &:hover{
-            cursor: pointer;
+    >a{
+        >img{
+            width: 12rem;
+            height: 6rem;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
     >div{
@@ -150,6 +152,9 @@ nav{
                 color: black;
                 display: inline-block;
                 white-space: nowrap;
+                &:hover{
+                    cursor: pointer;
+                }
                 .default-img {
                     width:clamp(1.6rem, calc(3vw + 1rem), 4rem);
                     position: absolute;

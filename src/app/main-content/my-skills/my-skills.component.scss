@@ -1,6 +1,7 @@
 section{
     width: 100%;
     height: auto;
+    margin-top: 14rem;
     padding: min(4rem, 6%);
     border: 5px solid black;
     >h2{
@@ -35,10 +36,6 @@ section{
             }
         }
     }
-}
-
-h2[id] {
-  scroll-margin-top: 100px;
 }
 
 a{

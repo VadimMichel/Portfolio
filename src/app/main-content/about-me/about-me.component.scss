@@ -1,6 +1,6 @@
 section{
     width: 100%;
-    margin-top: min(24rem, 20%);
+    
     >div:nth-child(2){
         display: flex;
         justify-content: space-between;
@@ -54,13 +54,10 @@ section{
 }
 
 h2{
+    margin-top: 10rem;
     font-size:clamp(3.6rem, calc(6vw + 1rem), 7.8rem);
     margin-bottom: min(8rem, 8%);
     white-space: nowrap;
-}
-
-h2[id] {
-  scroll-margin-top: 100px;
 }
 
 .arrow-container{

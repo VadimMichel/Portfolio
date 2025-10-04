@@ -1,6 +1,6 @@
 <div class="nav-wrapper">
     <nav>
-        <img src="assets/img/vm-high-resolution-logo-Photoroom.png" alt="">
+        <a (click)="scrollToId('hero')"><img src="assets/img/vm-high-resolution-logo-Photoroom.png" alt=""></a>
         <div>
             <div class="language-wrapper">
                 <span (click)="changeLanguage('en')" [class.border-color]='defaultLanguage' [class.border-placeholder]='!defaultLanguage'>EN</span>
@@ -10,7 +10,7 @@
                 <span (click)="changeLanguage('de')" [class.border-color]='!defaultLanguage' [class.border-placeholder]='defaultLanguage'>DE</span>
                 <img [class.language-animation]='defaultLanguage' src="assets/icons/language_animation.svg" alt="">
             </div>
-            <div class="hamburger" [class.open]="isMenuOpen" (click)="toggleMenu()">
+            <div class="hamburger" [class.open]="isMenuOpen" (click)="toggleMenu('')">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -19,19 +19,19 @@
         <div class="mobile-menu" [class.active]="isMenuOpen">
             <ul>
                 <li>
-                    <a (click)="toggleMenu()" href="#aboutMe">{{"aboutMe.h2" | translate }}
+                    <a (click)="toggleMenu('aboutMe')">{{"aboutMe.h2" | translate }}
                         <img class="default-img" src="assets/icons/overlay-animation-default.svg" alt="">
                         <img class="animation-img" src="assets/icons/overlay-animation.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a (click)="toggleMenu()" href="#mySkills">{{"mySkills.h2" | translate }}
+                    <a (click)="toggleMenu('mySkills')">{{"mySkills.h2" | translate }}
                         <img class="default-img" src="assets/icons/overlay-animation-default.svg" alt="">
                         <img class="animation-img" src="assets/icons/overlay-animation.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a (click)="toggleMenu()" href="#portfolio">Portfolio
+                    <a (click)="toggleMenu('portfolio')">Portfolio
                         <img class="default-img" src="assets/icons/overlay-animation-default.svg" alt="">
                         <img class="animation-img" src="assets/icons/overlay-animation.svg" alt="">
                     </a>
