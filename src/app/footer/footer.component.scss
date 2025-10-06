@@ -269,12 +269,13 @@ button:disabled {
     >div:nth-child(1){
         >img{
            width: 11.6rem; 
-           height: 10rem;
+           height: 5rem;
            &:hover{
             cursor: pointer;
            }
         }
         >p{
+            padding-top: 3rem;
             font-family: 'Overpass';
             font-weight: 400;
             font-size: 2.2rem;
