@@ -40,5 +40,8 @@ logos : Logo[] = [
     {name: 'Rest Api',
       imgUrl: 'assets/img/logos/api_logo.png'
     },
+    {name: 'Scrum',
+      imgUrl: 'assets/img/logos/scrum_logo.png'
+    }
   ]
 }
