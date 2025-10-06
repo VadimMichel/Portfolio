@@ -4,78 +4,7 @@
         <div *ngIf="shouldShowExtra()" class="contact-container">
             <p>{{"footer.description1" | translate }}</p>
             <p>{{"footer.description2" | translate }}</p>
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm ="ngForm">
-                <div class="input-wrapper">
-                    <input 
-                    (focus)="usernameFocus = true"
-                    (blur)="usernameFocus = false"
-                    [class.infocus]="usernameFocus || contactData.userName.length > 0"
-                    [(ngModel)]="contactData.userName"
-                    #name="ngModel"
-                    required [placeholder]="!usernameFocus ? ('footer.name' | translate ) : ''" type="text" name="name" />
-                    <div class="input-image">
-                        <img 
-                        *ngIf="name.valid && name.touched"
-                        src="./assets/icons/accepted.svg" alt="accepted">
-                        <img 
-                        *ngIf="name.invalid && name.touched" 
-                        src="./assets/icons/required.svg" alt="required">
-                    </div>
-                    <span *ngIf="name.invalid && name.touched">{{"footer.invalidName" | translate }}</span>
-                    <p class="place-holder" *ngIf="usernameFocus || contactData.userName.length > 0">{{"footer.name" | translate }}</p>
-                </div>
-                <div class="input-wrapper">
-                    <input 
-                    (focus)="emailFocus = true"
-                    (blur)="emailFocus = false"
-                    [class.infocus]="emailFocus || contactData.eMail.length > 0"
-                    [(ngModel)]="contactData.eMail"
-                    #mail="ngModel"
-                    required [placeholder]="!emailFocus ? ('footer.email' | translate ) : ''" type="email" name="email" 
-                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
-                    <div class="input-image">
-                        <img
-                        *ngIf="mail.valid && mail.touched" src="./assets/icons/accepted.svg" alt="accepted">
-                        <img 
-                        *ngIf="mail.invalid && mail.touched"
-                        src="./assets/icons/required.svg" alt="required">
-                    </div>
-                    <span *ngIf="mail.invalid && mail.touched">{{"footer.invalidMail" | translate }}</span>
-                    <p class="place-holder" *ngIf="emailFocus || contactData.eMail.length > 0">{{"footer.email" | translate }}</p>
-                </div>
-                <div>
-                    <textarea 
-                    (focus)="messageFocus = true"
-                    (blur)="messageFocus = false"
-                    [class.infocus]="messageFocus || contactData.message.length > 3"
-                    [(ngModel)]="contactData.message"
-                    #messageInput="ngModel"
-                    minlength="4"
-                    required [placeholder]="!messageFocus ? ('footer.message' | translate) : ''" rows="4" name="message"></textarea>
-                    <div class="text-image">
-                        <img
-                        *ngIf="messageInput.valid && messageInput.touched" src="./assets/icons/accepted.svg" alt="accepted">
-                        <img 
-                        *ngIf="messageInput.invalid && messageInput.touched"
-                        src="./assets/icons/required.svg" alt="required">
-                    </div>
-                    <span *ngIf="messageInput.invalid && messageInput.touched">{{"footer.invalidMessage" | translate }}</span>
-                    <p class="place-holder" [class.place-holder-text]="messageFocus || contactData.message.length" *ngIf="messageFocus || contactData.message.length > 0">{{"footer.message" | translate }}</p>
-                </div>
-                <div class="checkbox-wrapper">
-                    <label class="container">
-                        <input 
-                        name="privacy"
-                        [(ngModel)]="acceptedPrivacy"
-                        #privacy="ngModel"
-                        required type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <span >{{"footer.privacyPolicy1" | translate }} <a (click)="openRouterlink('/privacy-policy')">{{"footer.privacyPolicy2" | translate }} </a> {{"footer.privacyPolicy3" | translate }}</span>
-                    <p class="error" *ngIf="privacy.invalid && privacy.touched">{{"footer.invalidPrivacyPolicy" | translate }}</p>
-                </div>
-                <button type="submit" [disabled]="contactForm.invalid">{{"footer.button" | translate }}</button>
-            </form>
+            <app-contact></app-contact>
         </div>
         <div class="icon-area">
             <div>
