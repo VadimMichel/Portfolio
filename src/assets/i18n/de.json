@@ -5,7 +5,7 @@
     },
     "aboutMe": {
         "h2" : "Wer ich bin",
-        "description" : "Ich bin angehender Frontend-Entwickler mit einem starken Fokus auf nutzerfreundliche Webanwendungen, sauberen Code und effektive Zusammenarbeit. Erste Praxiserfahrungen habe ich mit Vanilla JavaScript, CSS und Django gesammelt. Besonders fasziniert mich am Coden die Verbindung aus Logik, Kreativität und realer Wirkung.<br><br>Ich bin lernbereit, technologieoffen und arbeite gerne im Team - ob per Pair Programming, Code-Reviews oder Remote-Calls. Probleme gehe ich strukturiert, kreativ und beharrlich an. Dank meines Organisationstalents, meiner empathischen Kommunikation und meines Verantwortungsbewusstseins kann ich mich schnell in Teams integrieren und verlässlich zum Projekterfolg beitragen.",
+        "description" : "Schon in der Schule hat mir Mathematik und Problemlösung Spaß gemacht. Heute setze ich dieses Denken in der Webentwicklung um, wo ich kreative Ideen durch Code zum Leben erwecke.<br><br>Ich arbeite gerne im Team und lerne aktuell Angular, mit dem ich mein Portfolio und das Gruppenprojekt „Join“ umgesetzt habe. Wenn ich auf Probleme stoße, recherchiere und experimentiere ich, bis ich eine Lösung finde.<br><br> Analytisches Denken, Kreativität und Struktur helfen mir dabei, neue Technologien effektiv zu lernen. Künftig möchte ich mich auch mit Java beschäftigen, um mein Wissen zu erweitern.",
         "based" : "Wohnhaft in Soltau (nahe Hamburg)",
         "work" : "Offen für Remote- oder Vor-Ort-Tätigkeit",
         "button" : "Lass uns reden"

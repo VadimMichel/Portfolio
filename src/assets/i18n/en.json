@@ -5,7 +5,7 @@
     },
     "aboutMe": {
         "h2" : "About me",
-        "description" : "I'm an aspiring frontend developer with a strong focus on user-friendly web applications, clean code, and effective collaboration. I've gained hands-on experience with Vanilla JavaScript, CSS, and Django. What excites me about coding is the combination of logic, creativity, and real-world impact.<br><br>I'm eager to learn, open to new technologies, and enjoy working in teams—whether through pair programming, code reviews, or remote collaboration tools. I approach problems with structure, creativity, and persistence. Thanks to my organizational skills, empathetic communication, and sense of responsibility, I integrate quickly into teams and reliably contribute to project success.",
+        "description" : "Since school, I have enjoyed mathematics and problem-solving. Today, I apply this mindset in web development, bringing creative ideas to life through code.<br><br>I enjoy working in a team and am currently learning Angular, which I have used to build my portfolio and the group project “Join”. When I encounter problems, I research and experiment until I find a solution.<br><br>Analytical thinking, creativity, and structure help me learn new technologies effectively. In the future, I also plan to explore Java to further expand my knowledge.",
         "based" : "Based in Soltau ( close to Hamburg )",
         "work" : "Open to work Remote or in Office",
         "button" : "Let's talk"
