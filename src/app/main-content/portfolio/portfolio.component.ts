@@ -25,7 +25,7 @@ export class PortfolioComponent {
     imgaeUrl : 'assets/img/join.png',
     usedSkills : 'Angulat | TypeScript | HTML | CSS | Firebase',
     description : 'portfolio.project1Description',
-    github : '#',
+    github : 'https://github.com/VadimMichel/join',
     rowRewerse : false
     },
     {
@@ -33,7 +33,7 @@ export class PortfolioComponent {
     imgaeUrl : 'assets/img/el_pollo_loco.png',
     usedSkills : 'JavaScript | HTML | CSS ',
     description : 'portfolio.project2Description',
-    github : '#',
+    github : 'https://github.com/VadimMichel/El-pollo-loco',
     rowRewerse : true
     }
   ]
