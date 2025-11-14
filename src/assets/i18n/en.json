@@ -5,7 +5,7 @@
     },
     "aboutMe": {
         "h2" : "About me",
-        "description" : "Since school, I have enjoyed mathematics and problem-solving. Today, I apply this mindset in web development, bringing creative ideas to life through code.<br><br>I enjoy working in a team and am currently learning Angular, which I have used to build my portfolio and the group project “Join”. When I encounter problems, I research and experiment until I find a solution.<br><br>Analytical thinking, creativity, and structure help me learn new technologies effectively. In the future, I also plan to explore Java to further expand my knowledge.",
+        "description" : "I'm especially fascinated by the combination of logical thinking and creative possibilities in programming. This mix motivates me to constantly find new ways to develop clean and functional solutions.<br><Br>I use TypeScript, Angular, JavaScript, CSS, and HTML to build structured, interactive, and visually engaging web applications. By combining these technologies, I create clean, functional, and user-friendly solutions.",
         "based" : "Based in Soltau ( close to Hamburg )",
         "work" : "Open to work Remote or in Office",
         "button" : "Let's talk"

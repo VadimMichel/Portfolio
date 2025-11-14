@@ -5,7 +5,7 @@
     },
     "aboutMe": {
         "h2" : "Wer ich bin",
-        "description" : "Schon in der Schule hat mir Mathematik und Problemlösung Spaß gemacht. Heute setze ich dieses Denken in der Webentwicklung um, wo ich kreative Ideen durch Code zum Leben erwecke.<br><br>Ich arbeite gerne im Team und lerne aktuell Angular, mit dem ich mein Portfolio und das Gruppenprojekt „Join“ umgesetzt habe. Wenn ich auf Probleme stoße, recherchiere und experimentiere ich, bis ich eine Lösung finde.<br><br> Analytisches Denken, Kreativität und Struktur helfen mir dabei, neue Technologien effektiv zu lernen. Künftig möchte ich mich auch mit Java beschäftigen, um mein Wissen zu erweitern.",
+        "description" : "Beim Programmieren fasziniert mich vor allem die Kombination aus logischem Denken und kreativen Gestaltungsmöglichkeiten. Genau diese Mischung motiviert mich, immer neue Wege zu finden, um saubere, funktionale Lösungen zu entwickeln.<br><br>Ich verwende TypeScript, Angular, JavaScript, CSS und HTML, um strukturierte, interaktive und visuell ansprechende Webanwendungen zu entwickeln. Durch die Kombination dieser Technologien erstelle ich saubere, funktionale und benutzerfreundliche Lösungen.",
         "based" : "Wohnhaft in Soltau (nahe Hamburg)",
         "work" : "Offen für Remote- oder Vor-Ort-Tätigkeit",
         "button" : "Lass uns reden"
