@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, EventEmitter, inject, OnInit, Output } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-translate/core"
@@ -28,6 +28,7 @@ export class ContactComponent {
   acceptedPrivacy: boolean = false;
   mailTest = true;
   http = inject(HttpClient);
+  @Output()massageSend = new EventEmitter<string>();
 
 
   constructor(private router: Router, private translate: TranslateService){}
@@ -48,8 +49,8 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
-            ngForm.resetForm();
+            this.sendMassage();
+            this.resetFormData(ngForm);
           },
           error: (error) => {
             console.error(error);
@@ -57,13 +58,30 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
+      this.resetFormData(ngForm);
+      this.sendMassage();
     }
+  }
+
+  private resetFormData(ngForm: NgForm) {
+    ngForm.reset();
+    this.contactData = {
+      userName: '',
+      eMail: '',
+      message: ''
+    };
+    this.acceptedPrivacy = false;
+    this.usernameFocus = false;
+    this.emailFocus = false;
+    this.messageFocus = false;
   }
 
   openRouterlink(url : string){
     this.router.navigateByUrl(url);
+  }
+
+  sendMassage(){
+    this.massageSend.emit();
   }
 }
 
