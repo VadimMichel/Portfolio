@@ -41,7 +41,8 @@
         "invalidPrivacyPolicy" : "Please accept the privacy policy",
         "name" : "Your name",
         "email" : "Your email",
-        "message" : "Your message"
+        "message" : "Your message",
+        "submittMassage" : "Message sent. Thank you!"
     },
     "legalNotice" : {
         "h2" : "Legal Notice",

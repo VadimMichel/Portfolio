@@ -41,7 +41,8 @@
         "invalidPrivacyPolicy" : "Bitte akzeptieren Sie die Datenschutzrichtlinie.",
         "name" : "Ihr Name",
         "email" : "Ihre Email",
-        "message" : "Ihre Nachricht"
+        "message" : "Ihre Nachricht",
+        "submittMassage" : "Nachricht gesendet. Vielen Dank!"
     },
     "legalNotice" : {
         "h2" : "Rechtlicher Hinweis",

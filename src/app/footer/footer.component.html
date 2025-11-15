@@ -4,7 +4,7 @@
         <div *ngIf="shouldShowExtra()" class="contact-container">
             <p>{{"footer.description1" | translate }}</p>
             <p>{{"footer.description2" | translate }}</p>
-            <app-contact></app-contact>
+            <app-contact (massageSend)="onMessageSent()"></app-contact>
         </div>
         <div class="icon-area">
             <div>
@@ -30,6 +30,9 @@
                     <img src="./assets/icons/legal_notice_underline.svg" alt="underline">
                 </div>
             </div>
+        </div>
+        <div *ngIf="massageSent" class="thank-you-message">
+            <p>{{"footer.submittMassage" | translate }}</p>
         </div>
     </footer>
 </div>

@@ -232,3 +232,35 @@ footer{
     animation: header-animation 2s ease-in-out infinite alternate !important;
   }
 }
+
+.thank-you-message{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 4rem;
+    border: 2px solid #FFFCF3;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Overpass';
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #00BC8F;
+    z-index: 10;
+}
+
+@keyframes thank-you-animation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

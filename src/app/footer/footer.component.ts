@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 export class FooterComponent {
   currentRoute = "";
   currentLang: string = 'en';
+  massageSent: boolean = false;
 
   constructor(private router: Router, private translate: TranslateService){
     this.router.events.subscribe(() => {
@@ -54,5 +55,12 @@ export class FooterComponent {
         }
       }, 50);
     });
+  }
+
+  onMessageSent(): void {
+    this.massageSent = true;
+    setTimeout(() => {
+      this.massageSent = false;
+    }, 2000);
   }
 }
