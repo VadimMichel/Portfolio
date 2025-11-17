@@ -12,7 +12,7 @@
     },
     "mySkills" : {
         "h2" : "Meine Skills",
-        "description" : "Die gesuchte Fähigkeit ist nicht dabei? <a class='link' href='#'>Kontaktiere mich</a> ich erweitere mein Wissen ständig."
+        "description" : "Die gesuchte Fähigkeit ist nicht dabei? <a class='link' href='#contact'>Kontaktiere mich</a> ich erweitere mein Wissen ständig."
     },
     "portfolio" : {
         "description" : "Entdecke eine Auswahl meiner Arbeiten, interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",

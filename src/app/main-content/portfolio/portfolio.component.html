@@ -1,6 +1,6 @@
 <section>
     <h2 id="portfolio">Portfolio</h2>
-    <p>Explore a selection of my work here - Interact with <br>projects to see my skill in action</p>
+    <p>{{'portfolio.description' | translate}}</p>
     @for (project of projects; track project.name; let i = $index; let total = $count) {
         <app-project [projectData]="project" [index]="i" [totalProjects]="total"></app-project>
     }
