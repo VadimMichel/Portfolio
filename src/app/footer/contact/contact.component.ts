@@ -33,7 +33,7 @@ export class ContactComponent {
   constructor(private router: Router, private translate: TranslateService){}
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://vadim-michel.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
