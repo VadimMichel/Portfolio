@@ -22,10 +22,6 @@ export class ReferencesComponent {
   {
     name : 'Robin Angelé',
     comment : 'references.reference2'
-  },
-  {
-    name : 'Max Mustermann',
-    comment : 'references.reference3'
   }
 ]
 }
