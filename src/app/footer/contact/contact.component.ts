@@ -26,7 +26,6 @@ export class ContactComponent {
   emailFocus: boolean = false;
   messageFocus: boolean = false;
   acceptedPrivacy: boolean = false;
-  mailTest = true;
   http = inject(HttpClient);
   @Output()massageSend = new EventEmitter<string>();
 
@@ -45,7 +44,7 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -57,9 +56,6 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      this.resetFormData(ngForm);
-      this.sendMassage();
     }
   }
 
