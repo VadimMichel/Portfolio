@@ -1,5 +1,5 @@
 <section>
-    <h2 id="portfolio">Portfolio</h2>
+    <h2 class="black-header" id="portfolio">Portfolio</h2>
     <p>{{'portfolio.description' | translate}}</p>
     @for (project of projects; track project.name; let i = $index; let total = $count) {
         <app-project [projectData]="project" [index]="i" [totalProjects]="total"></app-project>

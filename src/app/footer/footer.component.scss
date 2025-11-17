@@ -215,21 +215,6 @@ footer{
     }
 }
 
-@keyframes header-animation{
-  from{
-    color: #fff;
-  }
-  to{
-    color: #00BC8F;
-  }
-}
-
-@media(max-width: 900px ){
-  h2{
-    animation: header-animation 2s ease-in-out infinite alternate !important;
-  }
-}
-
 .thank-you-message{
     position: absolute;
     top:50%;

@@ -1,6 +1,6 @@
 <div class="footer-wrapper" [class.main]="shouldShowExtra()" [class.second]="!shouldShowExtra()">
     <footer id="contact">
-        <h2 *ngIf="shouldShowExtra()">{{"footer.h2" | translate }}</h2>
+        <h2 class="white-header" *ngIf="shouldShowExtra()">{{"footer.h2" | translate }}</h2>
         <div *ngIf="shouldShowExtra()" class="contact-container">
             <p>{{"footer.description1" | translate }}</p>
             <p>{{"footer.description2" | translate }}</p>

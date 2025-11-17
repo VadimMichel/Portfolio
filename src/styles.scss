@@ -21,7 +21,7 @@ html{
   font-size: 10px;
 }
 
-h2{
+.white-header, .black-header{
   font-family: 'Syne';
   font-weight: 800;
   font-size:clamp(3.6rem, calc(6vw + 1rem), 7.8rem);
@@ -45,7 +45,7 @@ body.no-scroll {
   width: 100%;
 }
 
-@keyframes header-animation{
+@keyframes black-header-animation{
   from{
     color: black;
   }
@@ -54,8 +54,20 @@ body.no-scroll {
   }
 }
 
+@keyframes white-header-animation{
+  from{
+    color: #fff;
+  }
+  to{
+    color: #00BC8F;
+  }
+}
+
 @media(max-width: 900px ){
-  h2{
-    animation: header-animation 2s ease-in-out infinite alternate;
+  .black-header{
+    animation: black-header-animation 2s ease-in-out infinite alternate;
+  }
+  .white-header{
+    animation: white-header-animation 2s ease-in-out infinite alternate;
   }
 }
