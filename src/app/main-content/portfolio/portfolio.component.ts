@@ -8,6 +8,7 @@ export interface Project{
   usedSkills : string;
   description : string;
   github : string;
+  live : string;
   rowRewerse : boolean;
 }
 
@@ -26,6 +27,7 @@ export class PortfolioComponent {
     usedSkills : 'Angulat | TypeScript | HTML | CSS | Firebase',
     description : 'portfolio.project1Description',
     github : 'https://github.com/VadimMichel/join',
+    live: 'join.vadim-michel.de',
     rowRewerse : false
     },
     {
@@ -34,6 +36,7 @@ export class PortfolioComponent {
     usedSkills : 'JavaScript | HTML | CSS ',
     description : 'portfolio.project2Description',
     github : 'https://github.com/VadimMichel/El-pollo-loco',
+    live: 'el-pollo-loco.vadim-michel.de',
     rowRewerse : true
     }
   ]

@@ -10,7 +10,6 @@ section {
   }
 
   >div:nth-child(2) {
-    height: 35rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -74,28 +73,24 @@ section {
 .project-info {
   opacity: 0;
   max-width: 54rem;
-
   h3 {
     font-family: 'syne';
     font-size: 4.5rem;
     font-weight: 800;
     margin-bottom: 1.2rem;
   }
-
   >p:nth-child(2) {
     font-family: 'Overpass';
     font-weight: 400;
     font-size: 2.3rem;
     color: #00BC8F;
   }
-
   >p:nth-child(3) {
     font-family: 'Overpass';
     font-weight: 400;
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
   }
-
   button {
     width: 18.9rem;
     height: 6.5rem;
@@ -106,12 +101,17 @@ section {
     font-weight: 400;
     transform-origin: left center;
     transition: 250ms ease;
-
     &:hover {
       cursor: pointer;
-      transform: scaleX(1.2);
+      transform: scaleX(1.1);
     }
   }
+}
+
+.button-container {
+  display: flex;
+  gap: 4rem;
+  padding-top: 4rem;
 }
 
 .image-wrapper {
@@ -172,21 +172,17 @@ section {
         display: none;
       }
     }
-
     &:hover .image-wrapper img {
       transition: 250ms ease;
       filter: grayscale(0%);
     }
-
     &:hover .image-wrapper::after {
       opacity: 1;
     }
-
     &:hover .project-info {
       animation: contant-animation 250ms ease forwards;
       opacity: 1;
     }
-
     &:hover .arrow-down {
       opacity: 1;
       animation: arrow-animation 250ms ease forwards;
@@ -287,6 +283,13 @@ section {
         opacity: 1;
       }
     }
+  }
+}
+
+@media(max-width: 500px) {
+  .button-container {
+    flex-direction: column;
+    height: auto;
   }
 }
 
