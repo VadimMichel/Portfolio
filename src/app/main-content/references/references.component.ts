@@ -22,6 +22,10 @@ export class ReferencesComponent {
   {
     name : 'Robin Angelé',
     comment : 'references.reference2'
+  },
+  {
+    name : 'Viktor Naumann',
+    comment : 'references.reference3'
   }
 ]
 }
