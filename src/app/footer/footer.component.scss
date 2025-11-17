@@ -42,6 +42,7 @@ footer{
         >img{
            width: 11.6rem; 
            height: 5rem;
+           margin-top: 3rem;
            &:hover{
             cursor: pointer;
            }
@@ -141,10 +142,6 @@ footer{
             transform: scaleY(1.6) translateY(10px);
         }
     }
-}
-
-.legal-notic-responsive{
-    margin-top: 2rem;
 }
 
 .footer-wrapper{

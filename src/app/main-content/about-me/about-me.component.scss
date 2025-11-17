@@ -62,7 +62,6 @@ h2{
 
 .arrow-container{
     width: 100%;
-    height: 40rem;
     display: flex;
     justify-content: flex-end;
     >img{
@@ -76,26 +75,15 @@ h2{
     transform: translate(0, 0);
   }
   to {
-    transform: translate(-400px, 100px);
-  }
-}
-
-@keyframes arrow-animation-responsive {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-20vw, 10vh);
+    transform: translate(-100px, 100px);
   }
 }
 
 .arrow {
   opacity: 0;
-  transform: translate(0, 0);
-  transition: opacity 0.3s ease;
 }
 
-.arrow.animate {
+.animate {
   animation: arrow-animation 800ms ease forwards;
   opacity: 1;
 }
@@ -169,18 +157,16 @@ h2{
     }
 }
 
-@media(max-width: 1000px){
-    .arrow.animate {
-        animation: arrow-animation-responsive 800ms ease forwards;
-    }
-}
-
-@media(max-width: 900px ){
-    .image-wrapper::after{
-        animation: image-animation 2s ease infinite alternate;
-        top: 1rem;
-        left: 1rem;
-        right: -1rem;
-        bottom: 0rem;
-    }
+@media (max-width: 900px) {
+  .image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: -1rem;
+    bottom: 0rem;
+    opacity: 0;
+    border: 4px solid black;
+    animation: image-animation 2s ease infinite alternate;
+  }
 }

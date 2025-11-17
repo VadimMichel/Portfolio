@@ -54,8 +54,12 @@ section{
 
 .arrow-container{
   justify-self: flex-end;
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  >img{
+    width: 21.5rem;
+    height: 21.5rem;
+  }
 }
 
 @keyframes arrow-animation {
@@ -63,32 +67,15 @@ section{
     transform: translate(0, 0);
   }
   to {
-    transform: translate(-400px, 80px);
-  }
-}
-
-@keyframes arrow-animation-responsive {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-20vw, 3vh);
+    transform: translate(-100px, 30px);
   }
 }
 
 .arrow {
   opacity: 0;
-  transform: translate(0, 0);
-  transition: opacity 0.3s ease;
 }
 
 .arrow.animate {
   animation: arrow-animation 800ms ease forwards;
   opacity: 1;
-}
-
-@media(max-width: 1000px){
-  .arrow.animate {
-    animation: arrow-animation-responsive 800ms ease forwards;
-  }
 }
