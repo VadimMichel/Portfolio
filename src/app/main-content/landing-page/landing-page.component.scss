@@ -1,4 +1,5 @@
-section{margin-top: 10rem;
+section{
+    margin-top: 24rem;
     z-index: 3;
     width: 100%;
     display: flex;
@@ -30,8 +31,8 @@ h1{
             font-weight: 700;
         }
         >img{
-            width:clamp(18rem, calc(30vw + 10rem), 67.3rem);
-            height: auto;
+            width:clamp(10rem, calc(30vw + 2rem), 67.3rem);
+            height: 0.3vw;
         }
     }
 }

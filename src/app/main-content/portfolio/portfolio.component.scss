@@ -11,3 +11,12 @@ section{
         margin-bottom: 12rem;
     }
 }
+
+@media(max-width: 880px){
+    section{
+        p{
+            text-align: start;
+        }
+
+    }
+}

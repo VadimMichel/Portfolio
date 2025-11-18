@@ -183,6 +183,9 @@ section {
       animation: contant-animation 250ms ease forwards;
       opacity: 1;
     }
+  }
+
+  .project1 {
     &:hover .arrow-down {
       opacity: 1;
       animation: arrow-animation 250ms ease forwards;
@@ -190,13 +193,13 @@ section {
   }
 
   .project2 {
-
     &:hover .project-info {
       animation: content-animation-reverse 250ms ease forwards;
       opacity: 1;
     }
 
     &:hover .arrow-down {
+      opacity: 1;
       animation: arrow-animation-reverse 250ms ease forwards;
     }
   }

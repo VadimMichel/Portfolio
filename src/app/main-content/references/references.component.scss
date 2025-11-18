@@ -79,3 +79,19 @@ section{
   animation: arrow-animation 800ms ease forwards;
   opacity: 1;
 }
+
+@media(max-width: 880px){
+  section{
+    >p:nth-child(2){
+      text-align: start;
+      justify-self: flex-start;
+    }
+    >div{
+      >div{
+        >p:nth-child(4){
+          text-align: start;
+        }
+      }
+    }
+  }
+}
