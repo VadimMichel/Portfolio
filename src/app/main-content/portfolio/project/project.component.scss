@@ -120,7 +120,7 @@ section {
 
   >img {
     width: clamp(20rem, calc(40vw + 10rem), 61.7rem);
-    height: clamp(15rem, calc(20vw + 10rem), 39.3rem);
+    height: clamp(15rem, calc(19vw + 10rem), 39.3rem);
     filter: grayscale(100%);
   }
 }
@@ -128,7 +128,7 @@ section {
 .image-wrapper::after {
   content: "";
   width: clamp(20rem, calc(40vw + 10rem), 61.7rem);
-  height: clamp(15rem, calc(20vw + 10rem), 39.3rem);
+  height: clamp(15rem, calc(19vw + 10rem), 39.3rem);
   position: absolute;
   top: 30px;
   left: 30px;
@@ -305,5 +305,13 @@ section {
     .arrow-down {
       left: -32px;
     }
+  }
+
+}
+
+@media (max-width: 1150px) and (min-width: 1001px) {
+  .button-container {
+    flex-direction: column;
+    height: auto;
   }
 }
