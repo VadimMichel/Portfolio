@@ -6,6 +6,7 @@
         [class.infocus]="usernameFocus || contactData.userName.length > 0"
         [(ngModel)]="contactData.userName"
         #name="ngModel"
+        minlength="3"
         required [placeholder]="!usernameFocus ? ('footer.name' | translate ) : ''" type="text" name="name" />
         <div class="input-image">
             <img 

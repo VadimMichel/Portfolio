@@ -1,6 +1,5 @@
 section{
     width: 100%;
-    
     >div:nth-child(2){
         display: flex;
         justify-content: space-between;
@@ -130,12 +129,14 @@ h2{
             align-items: center;
             >div{
                 display: flex;
-                align-items: center;
                 flex-direction: column;
                 width: 100%;
                 >p{
                     margin-right: 0;
                 }
+            }
+            >div:nth-child(2){
+                align-items: center;
             }
         }
     }
