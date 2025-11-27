@@ -5,7 +5,7 @@
     },
     "aboutMe": {
         "h2" : "About me",
-        "description" : "I'm especially fascinated by the combination of logical thinking and creative possibilities in programming. This mix motivates me to constantly find new ways to develop clean and functional solutions.<br><Br>I use TypeScript, Angular, JavaScript, CSS, and HTML to build structured, interactive, and visually engaging web applications. By combining these technologies, I create clean, functional, and user-friendly solutions.",
+        "description" : "In programming, I enjoy the combination of logical thinking and creative design. It motivates me to constantly develop new functional solutions.<br><Br>I use TypeScript, Angular, JavaScript, CSS, and HTML to create interactive and visually appealing web applications. This allows me to build clean, functional, and user-friendly solutions.",
         "based" : "Based in Soltau ( close to Hamburg )",
         "work" : "Open to work Remote or in Office",
         "button" : "Let's talk"

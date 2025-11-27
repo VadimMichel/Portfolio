@@ -5,7 +5,7 @@
     },
     "aboutMe": {
         "h2" : "Wer ich bin",
-        "description" : "Beim Programmieren fasziniert mich vor allem die Kombination aus logischem Denken und kreativen Gestaltungsmöglichkeiten. Genau diese Mischung motiviert mich, immer neue Wege zu finden, um saubere, funktionale Lösungen zu entwickeln.<br><br>Ich verwende TypeScript, Angular, JavaScript, CSS und HTML, um strukturierte, interaktive und visuell ansprechende Webanwendungen zu entwickeln. Durch die Kombination dieser Technologien erstelle ich saubere, funktionale und benutzerfreundliche Lösungen.",
+        "description" : "Beim Programmieren mag ich die Verbindung von logischem Denken und kreativer Gestaltung. Sie motiviert mich, immer neue funktionale Lösungen zu entwickeln.<br><br>Ich nutze TypeScript, Angular, JavaScript, CSS und HTML, um interaktive und ansprechende Webanwendungen zu erstellen. So entstehen saubere, funktionale und benutzerfreundliche Lösungen.",
         "based" : "Wohnhaft in Soltau (nahe Hamburg)",
         "work" : "Offen für Remote- oder Vor-Ort-Tätigkeit",
         "button" : "Lass uns reden"
